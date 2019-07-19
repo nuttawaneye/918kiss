@@ -1,0 +1,48 @@
+/* @import url("../font/SukhumvitSet.ttc"); */
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/SukhumvitSet.ttc");
+}
+html,
+body {
+  height: 100%;
+  font-family: myFirstFont !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.grad {
+  background: rgb(255, 205, 104);
+  background: linear-gradient(
+    140deg,
+    rgba(255, 205, 104, 1) 0%,
+    rgba(255, 180, 112, 1) 20%,
+    rgba(255, 70, 148, 1) 100%
+  );
+  background-attachment: fixed;
+}
+#Opening_1 {
+  margin: 0%;
+  padding: 0%;
+}
+.logo {
+  margin-top: 150pt;
+  width: 70%;
+  height: auto;
+}
+.footerimg {
+  bottom: 27.2pt;
+  width: 100%;
+}
+.credit_footer {
+  font-size: 8pt;
+  bottom: 15pt;
+}
+.footer {
+  bottom: 0;
+  position: absolute;
+}
+.txt_underline {
+  text-decoration: underline;
+}
