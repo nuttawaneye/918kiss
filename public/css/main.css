@@ -58,3 +58,20 @@ table {
   border-spacing: 0ch;
   border-collapse: separate;
 }
+
+/* nav */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.navbar .breadcrumb-item + .breadcrumb-item::before {
+  color: #bdbdbd;
+}
+.navbar .breadcrumb-item.active {
+  color: #bdbdbd;
+}
+.navbar.no-content .breadcrumb-item + .breadcrumb-item::before {
+  content: none;
+}

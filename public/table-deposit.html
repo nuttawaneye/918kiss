@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>ตารางแสดงรายการฝากล่าสุด</title>
+  </head>
+  <body>
+    <div class="container justify-content-center">
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <p style="font-weight: bold; font-size:18pt">
+            รายการฝากล่าสุด 20 รายการ
+          </p>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-10">
+          <table class="table table-sm" style="border-color: #ff5fa3">
+            <thead>
+              <th scope="col">ID</th>
+              <th scope="col">วันที่</th>
+              <th scope="col">เวลา</th>
+              <th scope="col">จำนวนเงินฝาก</th>
+              <th scope="col">สถานะ</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">250865</th>
+                <td>10/09/2019</td>
+                <td>15:09</td>
+                <td style="color: #ff5fa3">1,000</td>
+                <td>
+                  <span class="badge badge-pill badge-success">สำเร็จ</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">250845</th>
+                <td>10/09/2019</td>
+                <td>15:00</td>
+                <td style="color: #ff5fa3">1,000</td>
+                <td>
+                  <span class="badge badge-pill badge-danger">ไม่สำเร็จ</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>

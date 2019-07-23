@@ -184,7 +184,14 @@ h6 {
   background-color: #ad1457 !important;
 }
 .pink.darken-4 {
-  background-color: #880e4f !important;
+  /* background-color: #880e4f !important; */
+  background: rgb(255, 205, 104);
+  background: linear-gradient(
+    140deg,
+    rgba(255, 205, 104, 1) 0%,
+    rgba(255, 180, 112, 1) 20%,
+    rgba(255, 70, 148, 1) 100%
+  ) !important;
 }
 .pink.accent-1 {
   background-color: #ff80ab !important;
