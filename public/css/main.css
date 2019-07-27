@@ -158,3 +158,13 @@ table {
   font-size: 18px;
   line-height: 60px;
 }
+.w3-teal {
+  background: rgb(255, 205, 104);
+  background: linear-gradient(
+    140deg,
+    rgba(255, 205, 104, 1) 0%,
+    rgba(255, 180, 112, 1) 20%,
+    rgba(255, 70, 148, 1) 100%
+  ) !important;
+  background-attachment: fixed !important;
+}
