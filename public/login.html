@@ -25,23 +25,28 @@
 
     <title>login</title>
   </head>
-
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
   <body class="grad">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
+    <div class="container centered">
+      <div class="row text-center justify-content-center">
+        <div class="col-12 col-md-6">
           <img
             src="img/logo.png"
             alt="..."
             class=""
-            width="60%"
+            width="40%"
             height="auto"
-            style="margin-top: 60pt"
           />
         </div>
-      </div>
-      <div class="row text-center justify-content-center">
-        <div class="col-9">
+
+        <div class="col-12 col-md-6">
           <div class="md-form">
             <input
               type="text"
@@ -67,49 +72,42 @@
               >กำหนดรหัสผ่านสำหรับเข้าสู่ระบบ</label
             >
           </div>
+          <p class="mt-3">
+            <a href="main.html">
+              <button type="button" class="btn btn-outline-light waves-effect">
+                เข้าสู่ระบบ
+              </button>
+            </a>
+            <a
+              href="register.html"
+              class="col-12 txt_underline mt-1"
+              style="color: #ffffff"
+            >
+              สมัครสมาชิก
+            </a>
+          </p>
         </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-12">
-          <a href="main.html">
-            <button type="button" class="btn btn-outline-light waves-effect">
-              เข้าสู่ระบบ
-            </button>
-          </a>
-        </div>
-      </div>
-
-      <div class="row text-center">
-        <a
-          href="register.html"
-          class="col-12 txt_underline mt-1"
-          style="color: #ffffff"
-        >
-          สมัครสมาชิก
-        </a>
       </div>
     </div>
     <!-- footer -->
-    <div class="container">
-      <div class="row text-center footer footerimg justify-content-center">
-        <div class="col-md-2 col-3">
-          <img src="img/918kiss.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/joker.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/live22.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/slotxo.png" alt="" width="100%" />
-        </div>
-        <div
-          class="col-12 text-center credit_footer mt-3"
-          style="color: #707070"
-        >
-          Copyright © Slot-auto.com All Right Reserved
-        </div>
+    <div class="row footer footerimg text-center justify-content-center">
+      <div class="col-3 col-sm-2">
+        <img src="img/918kiss.png" alt="" width="90%" />
+      </div>
+      <div class="col-3 col-sm-2">
+        <img src="img/joker.png" alt="" width="90%" />
+      </div>
+      <div class="col-3 col-sm-2">
+        <img src="img/live22.png" alt="" width="90%" />
+      </div>
+      <div class="col-3 col-sm-2">
+        <img src="img/slotxo.png" alt="" width="90%" />
+      </div>
+      <div
+        class="col-12 col-sm-12 mt-2 text-center credit_footer"
+        style="font-size: 12pt; color: #ffffff"
+      >
+        Copyright © Slot-auto.com All Right Reserved
       </div>
     </div>
   </body>

@@ -27,7 +27,6 @@ body {
   padding: 0%;
 }
 .logo {
-  margin-top: 150pt;
   width: 70%;
   height: auto;
 }
@@ -36,12 +35,18 @@ body {
   width: 100%;
 }
 .credit_footer {
-  font-size: 8pt;
   bottom: 15pt;
 }
 .footer {
+  /* bottom: 0;
+  position: absolute; */
+  position: fixed;
+  left: 0;
   bottom: 0;
-  position: absolute;
+  width: 100%;
+  color: #707070;
+  text-align: center;
+  font-size: 10pt;
 }
 .txt_underline {
   text-decoration: underline;
@@ -130,4 +135,8 @@ body {
   .col-12 {
     width: 100%;
   }
+}
+
+.progress-bar {
+  background-color: #ff5fa3 !important;
 }

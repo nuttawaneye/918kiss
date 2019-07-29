@@ -9,7 +9,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome -->
     <link
@@ -22,25 +22,137 @@
     <link href="css/mdb.min.css" rel="stylesheet" />
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    <title>Deposit</title>
+    <title>Register</title>
   </head>
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
   <body>
-    <div class="container justify-content-center">
+    <!-- nav / side -->
+    <div
+      class="w3-sidebar w3-bar-block w3-border-right"
+      style="display:none; margin-top: 50px; z-index: 1024;"
+      id="mySidebar"
+    >
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <div
+            class="row"
+            style="background: linear-gradient(
+              140deg,
+              rgba(255, 205, 104, 1) 0%,
+              rgba(255, 180, 112, 1) 20%,
+              rgba(255, 70, 148, 1) 100%
+            );"
+          >
+            <div class="col-1 mt-5">
+              <a onclick="w3_close()" class="text-white ml-2"
+                ><i class="fas fa-times"></i
+              ></a>
+            </div>
+            <div class="col-11">
+              <div class="text-center" style="padding: 5px">
+                <img src="img/user.png" alt="" width="50%" />
+              </div>
+              <p class="mt-2 ml-2">
+                <a style="color: black"
+                  >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
+                >
+              </p>
+              <p class="ml-2">
+                <a style="color: black"
+                  >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
+                >
+              </p>
+              <p class="text-center" style="color: white">
+                <a href="userdata.html">ดูข้อมูลบัญชีของคุณ</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-bottom border-light mb-2">
+        <div class="col-12 col-md-12 mt-2">
+          <a href="#" class="w3-bar-item w3-button"
+            ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i>หน้าหลัก</a
+          >
+          <a href="#" class="w3-bar-item w3-button"
+            ><i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน</a
+          >
+          <a href="#" class="w3-bar-item w3-button"
+            ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+            >ดาวน์โหลด</a
+          >
+          <a href="#" class="w3-bar-item w3-button"
+            ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+            >ออกจากระบบ</a
+          >
+        </div>
+      </div>
+      <div class="row ml-1">
+        <div class="col-12 col-md-12 mt-2">
+          <p>
+            <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
+            >918kiss
+          </p>
+          <p>
+            <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- nav / side -->
+
+    <div class="w3-teal no-content pink darken-4  fixed-top">
+      <div class="w3-container">
+        <div class="row">
+          <div class="col-6">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">
+              ☰
+            </button>
+          </div>
+          <div class="col-6">
+            <a
+              class="button-collapse right_line"
+              href="#!"
+              style="margin-right: 0%; margin-left: 80%"
+            >
+              <img src="img/logo.png" alt="" width="15%" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container centered">
       <div class="row justify-content-center mt-5">
-        <div class="col-10">
+        <div class="col-10 col-md-10">
           <div class="card">
             <div class="card-body">
-              <h6 class="card-title mt-3">
-                <a>ธนาคาร : ธนาคารกรุงศรี</a><br />
-                <a>เลขที่บัญชี : 6541086646</a><br />
-                <a>ชื่อบุญชี : สมพิศ รอดเกษม</a><br />
-              </h6>
-              <div class="text-center">
-                <img src="img/BAY.png" alt="" width="80%" />
+              <div class="row">
+                <div class="col-12 col-md-12">
+                  <p class="card-title mt-3">
+                    <a>ธนาคาร : ธนาคารกรุงศรี</a><br />
+                    <a>เลขที่บัญชี : 6541086646</a><br />
+                    <a>ชื่อบุญชี : สมพิศ รอดเกษม</a><br />
+                  </p>
+                </div>
               </div>
-              <div class="row text-center mt-1">
-                <div class="col-12">
+
+              <div class="row text-center justify-content-center">
+                <div class="col-8 col-md-8">
+                  <img src="img/BAY.png" alt="" width="100%" />
+                </div>
+              </div>
+              <div class="row text-center mt-1 justify-content-center">
+                <div class="col-12 col-md-6">
                   <button type="button" class="btn btn-outline-pink">
                     คัดลอกเลขบัญชี
                   </button>
@@ -51,7 +163,7 @@
         </div>
       </div>
       <div class="row justify-content-center mt-3 mb-2">
-        <div class="col-10">
+        <div class="col-10 col-md-10">
           <a style="color: #ff5fa3"
             >**หลังจากโอนเงินแล้ว ใช้เวลาดำเนินการไม่เกิน 1 นาที
             จะสามารถยืนยันได้ แต่หากเกินเวลาที่กำหนด ให้ติดต่อพนักงานโดยทันที</a
@@ -65,9 +177,22 @@
         </div>
       </div>
     </div>
+
     <!-- footer -->
     <div class="container">
       <div class="row text-center footer footerimg justify-content-center">
+        <div class="col-md-2 col-3">
+          <img src="img/918kiss.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/joker.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/live22.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/slotxo.png" alt="" width="100%" />
+        </div>
         <div
           class="col-12 text-center credit_footer mt-3"
           style="color: #707070"
@@ -76,6 +201,16 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
   </body>
 </html>
 <!-- SCRIPTS -->
@@ -87,6 +222,4 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
-<script src="sweetalert2.all.min.js"></script>
-<!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
-<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
