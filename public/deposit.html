@@ -26,25 +26,16 @@
 
     <title>Register</title>
   </head>
-  <style>
-    .centered {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  </style>
   <body>
-    <!-- nav / side -->
     <div
-      class="w3-sidebar w3-bar-block w3-border-right"
+      class="w3-sidebar w3-animate-left boder-right "
       style="display:none; margin-top: 50px; z-index: 1024;"
       id="mySidebar"
     >
-      <div class="row">
-        <div class="col-12 col-md-12">
+      <div class="row ">
+        <div class="col-12 col-md-12 ">
           <div
-            class="row"
+            class="row pt-4"
             style="background: linear-gradient(
               140deg,
               rgba(255, 205, 104, 1) 0%,
@@ -52,11 +43,6 @@
               rgba(255, 70, 148, 1) 100%
             );"
           >
-            <div class="col-1 mt-5">
-              <a onclick="w3_close()" class="text-white ml-2"
-                ><i class="fas fa-times"></i
-              ></a>
-            </div>
             <div class="col-11">
               <div class="text-center" style="padding: 5px">
                 <img src="img/user.png" alt="" width="50%" />
@@ -78,22 +64,37 @@
           </div>
         </div>
       </div>
-      <div class="row border-bottom border-light mb-2">
+      <div class="row border-bottom w3-border-right mb-2">
         <div class="col-12 col-md-12 mt-2">
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i>หน้าหลัก</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
-            >ดาวน์โหลด</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
-            >ออกจากระบบ</a
-          >
+          <h6>
+            <a href="main.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i
+              >หน้าหลัก</a
+            >
+          </h6>
+          <h6>
+            <a
+              href="https://www.918kissauto.com/"
+              class="w3-bar-item w3-button"
+            >
+              <i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน
+            </a>
+          </h6>
+
+          <h6>
+            <a
+              href="https://www.918kissauto.com/download.php"
+              class="w3-bar-item w3-button"
+              ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+              >ดาวน์โหลด</a
+            >
+          </h6>
+          <h6>
+            <a href="login.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+              >ออกจากระบบ</a
+            >
+          </h6>
         </div>
       </div>
       <div class="row ml-1">
@@ -108,36 +109,44 @@
         </div>
       </div>
     </div>
-    <!-- nav / side -->
 
-    <div class="w3-teal no-content pink darken-4  fixed-top">
-      <div class="w3-container">
-        <div class="row">
-          <div class="col-6">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">
-              ☰
-            </button>
-          </div>
-          <div class="col-6">
-            <a
-              class="button-collapse right_line"
-              href="#!"
-              style="margin-right: 0%; margin-left: 80%"
-            >
-              <img src="img/logo.png" alt="" width="15%" />
-            </a>
-          </div>
+    <div
+      class="w3-overlay w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer;"
+      id="myOverlay"
+    ></div>
+    <nav
+      class=" navbar navbar-expand-lg navbar-dark pink darken-4 "
+      style="z-index: 1025;"
+    >
+      <div class="container">
+        <div class="col-6 col-md-6">
+          <button
+            class="navbar-toggler "
+            type="button"
+            onclick="w3_open()"
+            aria-expanded="false"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <a class="col-6 col-md-6 text-right">
+          <a class="button-collapse right_line" href="#!">
+            <img src="img/logo.png" alt="" width="60px" />
+          </a>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="container centered mt-2">
+    <div class="container mt-2">
       <div class="row justify-content-center">
-        <div class="col-10 mt-5">
-          <p style="font-size: 22pt; font-weight: bold; color: #ff5fa3">
+        <div class="col-12 col-md-8 mt-5">
+          <h2 style="font-weight: bold; color: #ff5fa3">
             <i class="fas fa-wallet"></i>
             ฝากเงิน
-          </p>
+          </h2>
           <div class="progress">
             <div
               class="progress-bar"
@@ -148,21 +157,18 @@
               aria-valuemax="100"
             ></div>
           </div>
-          <p
-            class="mt-5"
-            style="font-size: 18pt; font-weight: bold; color: #ff5fa3"
-          >
+          <h3 class="mt-5" style=" font-weight: bold; color: #ff5fa3">
             แจ้งเตือนก่อนฝาก
-          </p>
-          <p style="color: #ff5fa3; font-size: 16pt; font-weight: lighter">
+          </h3>
+          <h4 style="color: #ff5fa3; font-weight: lighter">
             ลูกค้าทุกท่านต้องมียอด ต่ำกว่า 10 บาท มิเช่นนั้น
             ยอดเทิร์นจะถูกคิดรวมกับของเก่า
-          </p>
+          </h4>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-12 col-md-8">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title mt-3">
@@ -172,6 +178,7 @@
                 name="bank"
                 id="sel_bank"
                 class="browser-default custom-select"
+                style="font-size: 1.5rem"
               >
                 <option selected>เลือกธนาคาร...</option>
                 <option value="1">ธนาคารกรุงศรี จำกัด (มหาชน)</option>
@@ -187,45 +194,16 @@
             class="btn peach-gradient rounded mt-5"
             style="font-weight: bold"
           >
-            ต่อไป >
+            <h5>ต่อไป ></h5>
           </button></a
         >
       </div>
     </div>
-
-    <!-- footer -->
-    <div class="container">
-      <div class="row text-center footer footerimg justify-content-center">
-        <div class="col-md-2 col-3">
-          <img src="img/918kiss.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/joker.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/live22.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/slotxo.png" alt="" width="100%" />
-        </div>
-        <div
-          class="col-12 text-center credit_footer mt-3"
-          style="color: #707070"
-        >
-          Copyright © Slot-auto.com All Right Reserved
-        </div>
+    <div class="row mt-5 footer">
+      <div class="col-12 text-center " style="color: #707070; ">
+        <h5>Copyright © Slot-auto.com All Right Reserved</h5>
       </div>
     </div>
-
-    <script>
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-      }
-
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-    </script>
   </body>
 </html>
 <!-- SCRIPTS -->
@@ -238,3 +216,15 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>

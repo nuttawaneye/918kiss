@@ -1,74 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/register.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
-
-    <title>Deposit</title>
-  </head>
-  <body>
-    <div class="container justify-content-center">
-      <!-- <div class="row mt-5">
-        <div class="col-2">
-          <img src="img/deposit.png" alt="" width="100%" />
-        </div>
-        <div class="col-10">
-          <p style="color: #ff5fa3; font-weight: bold">ฝากเงิน</p>
-        </div>
-      </div> -->
-      <div class="row justify-content-center">
-        <div class="col-10 mt-5">
-          <p style="font-size: 22pt; font-weight: bold; color: #ff5fa3">
-            ฝากเงิน
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <div class="alert alert-warning" role="alert">
-            <p style="color: #ff5fa3; font-size: 16pt; font-weight: bold">
-              กติกาการถอนเงิน
-            </p>
-            <p>1.ถอนขั้นต่ำ 300 บาท</p>
-            <p>2.กรณีไม่รับโบนัส จะต้องมีรายการเล่นอย่างน้อย 1 ครั้ง</p>
-            <p>3.กรณีมีการทุจริต การตัดสินใจของแอดมินถือเป็นทีสุด</p>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font Awesome -->
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        />
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet" />
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    
+        <title>Withdraw</title>
+      </head>
+      <style>
+        .centered {
+          position: fixed;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <body>
+        <!-- nav / side -->
+        <div
+          class="w3-sidebar w3-bar-block w3-border-right"
+          style="display:none; margin-top: 50px; z-index: 1024;"
+          id="mySidebar"
+        >
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <div
+                class="row"
+                style="background: linear-gradient(
+                  140deg,
+                  rgba(255, 205, 104, 1) 0%,
+                  rgba(255, 180, 112, 1) 20%,
+                  rgba(255, 70, 148, 1) 100%
+                );"
+              >
+                <div class="col-1 mt-5">
+                  <a onclick="w3_close()" class="text-white ml-2"
+                    ><i class="fas fa-times"></i
+                  ></a>
+                </div>
+                <div class="col-11">
+                  <div class="text-center" style="padding: 5px">
+                    <img src="img/user.png" alt="" width="50%" />
+                  </div>
+                  <p class="mt-2 ml-2">
+                    <a style="color: black"
+                      >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
+                    >
+                  </p>
+                  <p class="ml-2">
+                    <a style="color: black"
+                      >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
+                    >
+                  </p>
+                  <p class="text-center" style="color: white">
+                    <a href="userdata.html">ดูข้อมูลบัญชีของคุณ</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row border-bottom border-light mb-2">
+            <div class="col-12 col-md-12 mt-2">
+              <a href="#" class="w3-bar-item w3-button"
+                ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i>หน้าหลัก</a
+              >
+              <a href="#" class="w3-bar-item w3-button"
+                ><i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน</a
+              >
+              <a href="#" class="w3-bar-item w3-button"
+                ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+                >ดาวน์โหลด</a
+              >
+              <a href="#" class="w3-bar-item w3-button"
+                ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+                >ออกจากระบบ</a
+              >
+            </div>
+          </div>
+          <div class="row ml-1">
+            <div class="col-12 col-md-12 mt-2">
+              <p>
+                <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
+                >918kiss
+              </p>
+              <p>
+                <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+        <!-- nav / side -->
+        <div class="w3-teal no-content pink darken-4  fixed-top">
+          <div class="w3-container">
+            <div class="row">
+              <div class="col-6">
+                <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">
+                  <i class="fas fa-bars fa-md"></i>
+                </button>
+              </div>
+              <div class="col-6">
+                <a
+                  class="button-collapse right_line"
+                  href="#!"
+                  style="margin-right: 0%; margin-left: 80%"
+                >
+                  <img src="img/logo.png" alt="" width="15%" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  <body>
+    <div class="container justify-content-center" style="margin-top: 20%">
+        <p style="font-size: 22pt; font-weight: bold; color: #ff5fa3">
+            <i class="fas fa-hand-holding-usd"></i>
+            ถอนเงิน
+          </p>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 100%;"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
 
-      <div class="row justify-content-center">
-        <div class="col-10">
+          <div class="row justify-content-center mt-5">
+              <div class="col-10">
+                <div class="alert alert-warning" role="alert">
+                    <p style="color: #ff5fa3; font-size: 16pt; font-weight: bold">
+                        กติกาการถอนเงิน
+                      </p>
+                      <p>1.ถอนขั้นต่ำ 300 บาท</p>
+                      <p>2.กรณีไม่รับโบนัส จะต้องมีรายการเล่นอย่างน้อย 1 ครั้ง</p>
+                      <p>3.กรณีมีการทุจริต การตัดสินใจของแอดมินถือเป็นทีสุด</p>
+                </div>
+              </div>
+            </div>
+
+      <div class="row justify-content-center mt-3">
+        <div class="col-10 col-md-8 col-lg-8">
           <div class="card">
             <div class="card-body">
-              <div class="row">
-                <div class="col-12 text-center">
+              <div class="row text-center justify-content-center">
+                <div class="col-12 col-md-6 col-lg-6 text-center">
                   <img src="img/user data.png" alt="" width="30%" />
                 </div>
               </div>
-              <h5 class="card-title mt-3 text-center">
-                <a>ข้อมูลบัญชีของคุณ</a>
-              </h5>
-              <div class="row justify-content-center text-center mt-2">
-                    <div class="col-10 justify-content-center">
+              <div class="card-title mt-3 text-center">
+                <a style="font-size: 18pt">ข้อมูลบัญชีของคุณ</a>
+              </div>
+              <div class="row text-center justify-content-center mt-2">
+                    <div class="col-5 col-md-3 col-lg-2 text-center">
                         <div class="row" style="font-size: 8pt">
                             <p>
                                 <p style="color:#ff5fa3; font-weight: bold">ธนาคาร :</p>
@@ -91,7 +195,7 @@
               </div>
               </div>
           </div>
-          <div class="row text-center mt-4">
+          <div class="row text-center mt-5">
                 <div class="col-12">
                     <a style="font-weight: bold; font-size:16pt">ยอดเงินคงเหลือ : <a style="color: #ff5fa3; font-weight: bold; font-size: 16pt">950</a> บาท </a>
                 </div>
@@ -126,14 +230,25 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+  
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+      </script>
+    </body>
+  </html>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  
