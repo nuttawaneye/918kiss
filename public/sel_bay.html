@@ -24,7 +24,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    <title>Select bank BAY</title>
+    <title>Select BAY</title>
   </head>
   <style>
     .centered {
@@ -35,16 +35,16 @@
     }
   </style>
   <body>
-    <!-- nav / side -->
+    <!-- nav/side -->
     <div
-      class="w3-sidebar w3-bar-block w3-border-right"
-      style="display:none; margin-top: 50px; z-index: 1024;"
+      class="w3-sidebar w3-animate-left boder-right "
+      style="display:none; margin-top: 3px; z-index: 1024;"
       id="mySidebar"
     >
-      <div class="row">
-        <div class="col-12 col-md-12">
+      <div class="row ">
+        <div class="col-12 col-md-12 ">
           <div
-            class="row"
+            class="row pt-4"
             style="background: linear-gradient(
               140deg,
               rgba(255, 205, 104, 1) 0%,
@@ -52,21 +52,16 @@
               rgba(255, 70, 148, 1) 100%
             );"
           >
-            <div class="col-1 mt-5">
-              <a onclick="w3_close()" class="text-white ml-2"
-                ><i class="fas fa-times"></i
-              ></a>
-            </div>
             <div class="col-11">
               <div class="text-center" style="padding: 5px">
                 <img src="img/user.png" alt="" width="50%" />
               </div>
-              <p class="mt-2 ml-2">
+              <p class="mt-2 ml-2 text-center">
                 <a style="color: black"
                   >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
                 >
               </p>
-              <p class="ml-2">
+              <p class="ml-2 text-center">
                 <a style="color: black"
                   >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
                 >
@@ -78,74 +73,104 @@
           </div>
         </div>
       </div>
-      <div class="row border-bottom border-light mb-2">
+      <div class="row border-bottom w3-border-right mb-2">
         <div class="col-12 col-md-12 mt-2">
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i>หน้าหลัก</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
-            >ดาวน์โหลด</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
-            >ออกจากระบบ</a
-          >
+          <h6>
+            <a href="main.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i
+              >หน้าหลัก</a
+            >
+          </h6>
+          <h6>
+            <a
+              href="https://www.918kissauto.com/"
+              class="w3-bar-item w3-button"
+            >
+              <i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน
+            </a>
+          </h6>
+
+          <h6>
+            <a
+              href="https://www.918kissauto.com/download.php"
+              class="w3-bar-item w3-button"
+              ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+              >ดาวน์โหลด</a
+            >
+          </h6>
+          <h6>
+            <a href="login.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+              >ออกจากระบบ</a
+            >
+          </h6>
         </div>
       </div>
       <div class="row ml-1">
         <div class="col-12 col-md-12 mt-2">
-          <p>
+          <h5>
             <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
             >918kiss
-          </p>
-          <p>
+          </h5>
+          <h5>
             <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- nav / side -->
-
-    <div class="w3-teal no-content pink darken-4  fixed-top">
-      <div class="w3-container">
-        <div class="row">
-          <div class="col-6 col-md-6">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">
-              <i class="fas fa-bars fa-md"></i>
-            </button>
-          </div>
-          <div class="col-6 col-md-6">
-            <a
-              class="button-collapse right_line"
-              href="#!"
-              style="margin-right: 0%; margin-left: 80%"
-            >
-              <img src="img/logo.png" alt="" width="15%" />
-            </a>
-          </div>
+          </h5>
         </div>
       </div>
     </div>
 
-    <div class="container justify-content-center" style="margin-top: 20%">
-      <p style="font-size: 22pt; font-weight: bold; color: #ff5fa3">
-        <i class="fas fa-wallet"></i>
-        ฝากเงิน
-      </p>
-      <div class="progress">
-        <div
-          class="progress-bar"
-          role="progressbar"
-          style="width: 66%;"
-          aria-valuenow="50"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
+    <div
+      class="w3-overlay w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer;"
+      id="myOverlay"
+    ></div>
+    <nav
+      class=" navbar navbar-expand-lg navbar-dark pink darken-4"
+      style="z-index: 1025;"
+    >
+      <div class="container">
+        <div class="col-6 col-md-6">
+          <button
+            class="navbar-toggler "
+            type="button"
+            onclick="w3_open()"
+            aria-expanded="false"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-6 col-md-6 text-right">
+          <a class="button-collapse right_line" href="#!">
+            <img src="img/logo.png" alt="" width="60px" />
+          </a>
+        </div>
       </div>
+    </nav>
+
+    <!-- nav/side -->
+
+    <div class="container" style="margin-top:50px">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mt-5">
+            <h2 style="font-size: 22pt; font-weight: bold; color: #ff5fa3">
+                <i class="fas fa-wallet"></i>
+                ฝากเงิน
+              </h2>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 66%;"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+        </div>
+      </div>
+      
       <div class="row justify-content-center mt-5">
         <div class="col-10 col-md-8 col-lg-5">
           <div class="card">
@@ -155,18 +180,18 @@
                   <img src="img/bay-logo.png" alt="" width="50%" />
                 </div>
                 <div class="col-12 col-md-7">
-                  <p class="card-title mt-3 text-left">
+                  <h4 class="card-title mt-3 text-left">
                     <a>ธนาคาร : ธนาคารกรุงศรีอยุธยา</a><br />
                     <a>เลขที่บัญชี : 4310256060</a><br />
                     <a>ชื่อบุญชี : สมพิศ รอดเกษม</a><br />
-                  </p>
+                  </h4>
                 </div>
               </div>
 
               <div class="row text-center mt-1 ">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-12 justify-content-center" onclick="alert_copy_success()">
                   <button type="button" class="btn btn-outline-pink">
-                    คัดลอกเลขบัญชี
+                    <h6>คัดลอกเลขบัญชี</h6>
                   </button>
                 </div>
               </div>
@@ -176,52 +201,72 @@
       </div>
       <div class="row justify-content-center mt-5 mb-2">
         <div class="col-10 col-md-8">
-          <a style="color: #ff5fa3; font-weight: bold"
+          <h6><a style="color: #ff5fa3; font-weight: bold"
             >**หลังจากโอนเงินแล้ว ใช้เวลาดำเนินการไม่เกิน 1 นาที
             จะสามารถยืนยันได้ แต่หากเกินเวลาที่กำหนด ให้ติดต่อพนักงานโดยทันที</a
-          >
+          ></h6>
+          
         </div>
       </div>
       <div class="row text-center justify-content-center mt-4 mb-3">
         <div class="col-10">
-          <button type="button" class="btn btn-danger">ยกเลิก</button>
-          <a href="result_bank.html"
+          <h5>
+              <a href="main.html"><button type="button" class="btn btn-danger">ยกเลิก</button></a>
+              <a href="result_bank.html"
             ><button type="button" class="btn btn-light-green">ต่อไป</button></a
           >
+          </h5>   
         </div>
       </div>
-    </div>
-
-    <!-- footer -->
-    <!-- <div class="container">
-      <div class="row text-center footer footerimg justify-content-center">
-        <div
-          class="col-12 text-center credit_footer mt-"
-          style="color: #707070"
-        >
-          Copyright © Slot-auto.com All Right Reserved
+      <!-- footer -->
+    <div class="container" style="margin-top: 10%">
+        <div class="row text-center justify-content-center">
+          <div class="col-md-2 col-3">
+            <img src="img/918kiss.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/joker.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/live22.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/slotxo.png" alt="" width="100%" />
+          </div>
+          <div
+            class="col-12 credit_footer mt-3"
+            style="color: #707070"
+          >
+            Copyright © Slot-auto.com All Right Reserved
+          </div>
         </div>
       </div>
-    </div> -->
 
-    <script>
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-      }
-
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-    </script>
   </body>
-</html>
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  </html>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+  
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    function alert_copy_success() {
+    Swal.fire("คัดลอกสำเร็จ", "", "success");
+  }
+  </script>
+  

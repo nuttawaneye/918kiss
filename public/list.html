@@ -33,40 +33,41 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    td {
+      color: #202020 !important;
+    }
+    th {
+      color: #ff5fa3 !important;
+    }
   </style>
   <body class="grad">
-    <!-- nav / side -->
+    <!-- nav/side -->
     <div
-      class="w3-sidebar w3-bar-block w3-border-right"
-      style="display:none; margin-top: 50px; z-index: 1024;"
+      class="w3-sidebar w3-animate-left boder-right "
+      style="display:none; margin-top: 3px; z-index: 1024;"
       id="mySidebar"
     >
-      <div class="row">
-        <div class="col-12 col-md-12">
+      <div class="row ">
+        <div class="col-12 col-md-12 ">
           <div
-            class="row"
+            class="row pt-4"
             style="background: linear-gradient(
-              140deg,
-              rgba(255, 205, 104, 1) 0%,
-              rgba(255, 180, 112, 1) 20%,
-              rgba(255, 70, 148, 1) 100%
-            );"
+            140deg,
+            rgba(255, 205, 104, 1) 0%,
+            rgba(255, 180, 112, 1) 20%,
+            rgba(255, 70, 148, 1) 100%
+          );"
           >
-            <div class="col-1 mt-5">
-              <a onclick="w3_close()" class="text-white ml-2"
-                ><i class="fas fa-times"></i
-              ></a>
-            </div>
             <div class="col-11">
               <div class="text-center" style="padding: 5px">
                 <img src="img/user.png" alt="" width="50%" />
               </div>
-              <p class="mt-2 ml-2">
+              <p class="mt-2 ml-2 text-center">
                 <a style="color: black"
                   >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
                 >
               </p>
-              <p class="ml-2">
+              <p class="ml-2 text-center">
                 <a style="color: black"
                   >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
                 >
@@ -78,97 +79,147 @@
           </div>
         </div>
       </div>
-      <div class="row border-bottom border-light mb-2">
+      <div class="row border-bottom w3-border-right mb-2">
         <div class="col-12 col-md-12 mt-2">
-          <a href="main.html" class="w3-bar-item w3-button"
-            ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i>หน้าหลัก</a
-          >
-          <a href="https://www.918kissauto.com/" class="w3-bar-item w3-button"
-            ><i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน</a
-          >
-          <a
-            href="https://www.918kissauto.com/download.php"
-            class="w3-bar-item w3-button"
-            ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
-            >ดาวน์โหลด</a
-          >
-          <a href="login.html" class="w3-bar-item w3-button"
-            ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
-            >ออกจากระบบ</a
-          >
+          <h6>
+            <a href="main.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i
+              >หน้าหลัก</a
+            >
+          </h6>
+          <h6>
+            <a
+              href="https://www.918kissauto.com/"
+              class="w3-bar-item w3-button"
+            >
+              <i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน
+            </a>
+          </h6>
+
+          <h6>
+            <a
+              href="https://www.918kissauto.com/download.php"
+              class="w3-bar-item w3-button"
+              ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+              >ดาวน์โหลด</a
+            >
+          </h6>
+          <h6>
+            <a href="login.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+              >ออกจากระบบ</a
+            >
+          </h6>
         </div>
       </div>
       <div class="row ml-1">
         <div class="col-12 col-md-12 mt-2">
-          <p>
+          <h5>
             <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
             >918kiss
-          </p>
-          <p>
+          </h5>
+          <h5>
             <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
-          </p>
+          </h5>
         </div>
       </div>
     </div>
-    <!-- nav / side -->
 
-    <div class="w3-teal no-content pink darken-4  fixed-top">
-      <div class="w3-container">
-        <div class="row">
-          <div class="col-6">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          <div class="col-12 col-md-6">
+    <div
+      class="w3-overlay w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer;"
+      id="myOverlay"
+    ></div>
+    <nav
+      class=" navbar navbar-expand-lg navbar-dark pink darken-4"
+      style="z-index: 1025;"
+    >
+      <div class="container">
+        <div class="col-6 col-md-6">
+          <button
+            class="navbar-toggler "
+            type="button"
+            onclick="w3_open()"
+            aria-expanded="false"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-6 col-md-6 text-right">
+          <a class="button-collapse right_line" href="#!">
+            <img src="img/logo.png" alt="" width="60px" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav/side -->
+
+    <div class="container" style="margin-top:50px">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mt-5">
+          <h2 style="color: white; font-size: 22pt; font-weight: bold">
+            <i class="fas fa-clipboard-list mr-3"></i>ประวัติการทำรายการ
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center ">
+        <div class="col-12 col-md-8 mt-5">
+          <div class="list-group h3">
             <a
-              class="button-collapse right_line"
-              href="#!"
-              style="margin-left: 70%; margin-right: 0%"
+              data-toggle="modal"
+              data-target="#table_dep"
+              class="list-group-item list-group-item-action flex-column align-items-start"
             >
-              <img src="img/logo.png" alt="" width="15%" />
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-2">
+                  <i class="fas fa-wallet"></i> รายการฝากล่าสุด 20 รายการ
+                </h5>
+                <small
+                  ><i class="fas fa-angle-right fa-3x pink-text"></i
+                ></small>
+              </div>
+            </a>
+            <a
+              data-toggle="modal"
+              data-target="#table_with"
+              class="list-group-item list-group-item-action flex-column align-items-start"
+            >
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-2">
+                  <i class="fas fa-hand-holding-usd"></i> รายการถอนล่าสุด 20
+                  รายการ
+                </h5>
+                <small
+                  ><i class="fas fa-angle-right fa-3x pink-text"></i
+                ></small>
+              </div>
+            </a>
+
+            <a
+              data-toggle="modal"
+              data-target="#table_bonus"
+              class="list-group-item list-group-item-action flex-column align-items-start"
+            >
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-2">
+                  <i class="fas fa-gift"></i> รายการรับโบนัสล่าสุด 20 รายการ
+                </h5>
+                <small
+                  ><i class="fas fa-angle-right fa-3x pink-text"></i
+                ></small>
+              </div>
             </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container centered">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
-          <p style="color: white; font-size: 22pt; font-weight: bold">
-            <i class="fas fa-clipboard-list mr-3"></i>ประวัติการทำรายการ
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <div class="list-group">
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light text-left"
-              >รายการฝากล่าสุด 20 รายการ
-              <i class="fas fa-angle-right text-right pink-text"></i
-            ></a>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light"
-              >รายการถอนล่าสุด 20 รายการ
-              <i class="fas fa-angle-right text-right pink-text"></i
-            ></a>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light"
-              >รายการรับโบนัสล่าสุด 20 รายการ
-              <i class="fas fa-angle-right text-right pink-text"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- footer -->
-    <div class="container">
-      <div class="row text-center footer footerimg justify-content-center">
+    <div class="container" style="margin-top: 15%">
+      <div class="row text-center justify-content-center">
         <div class="col-md-2 col-3">
           <img src="img/918kiss.png" alt="" width="100%" />
         </div>
@@ -181,24 +232,273 @@
         <div class="col-md-2 col-3">
           <img src="img/slotxo.png" alt="" width="100%" />
         </div>
-        <div
-          class="col-12 text-center credit_footer mt-3"
-          style="color: #ffffff"
-        >
+        <div class="col-12 credit_footer mt-3" style="color: #ffffff">
           Copyright © Slot-auto.com All Right Reserved
         </div>
       </div>
     </div>
-    <script>
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-      }
-
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-    </script>
   </body>
+  <!-- modal1 -->
+  <!-- Deposit table -->
+  <div
+    class="modal fade "
+    id="table_dep"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    <!-- Change class .modal-sm to change the size of the modal -->
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title w-100" id="myModalLabel">
+            <i class="fas fa-wallet" style="color: #ff5fa3"></i>
+            รายการฝากล่าสุด 20 รายการ
+          </h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8">
+                <table class="table table-sm">
+                  <thead>
+                    <th>ID</th>
+                    <th>วันที่</th>
+                    <th>เวลา</th>
+                    <th>จำนวนเงินฝาก</th>
+                    <th>สถานะ</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-success"
+                          >สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>250845</td>
+                      <td>10/09/2019</td>
+                      <td>15:00</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-danger"
+                          >ไม่สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-success"
+                          >สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-success"
+                          >สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Deposit table -->
+
+  <!-- modal2 -->
+  <!-- Withdraw table -->
+  <div
+    class="modal fade "
+    id="table_with"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    <!-- Change class .modal-sm to change the size of the modal -->
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title w-100" id="myModalLabel">
+            <i class="fas fa-hand-holding-usd" style="color: #ff5fa3"></i>
+            รายการถอนล่าสุด 20 รายการ
+          </h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8">
+                <table class="table table-sm">
+                  <thead>
+                    <th>ID</th>
+                    <th>วันที่</th>
+                    <th>เวลา</th>
+                    <th>จำนวนเงินถอน</th>
+                    <th>สถานะ</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-success"
+                          >สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>250845</td>
+                      <td>10/09/2019</td>
+                      <td>15:00</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-danger"
+                          >ไม่สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-success"
+                          >สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>1,000</th>
+                      <td>
+                        <span class="badge badge-pill badge-success"
+                          >สำเร็จ</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Withdraw Table -->
+
+  <!-- modal3 -->
+  <!-- Bonus table -->
+  <div
+    class="modal fade "
+    id="table_bonus"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+  >
+    <!-- Change class .modal-sm to change the size of the modal -->
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title w-100" id="myModalLabel">
+            <i class="fas fa-gift" style="color: #ff5fa3"></i>
+            รายการรับโบนัสล่าสุด 20 รายการ
+          </h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-8">
+                <table class="table table-sm">
+                  <thead>
+                    <th>ID</th>
+                    <th>วันที่</th>
+                    <th>เวลา</th>
+                    <th>โบนัส</th>
+                    <th>จำนวน</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>โบนัสฟรี 10 บาท</th>
+                      <th>1</th>
+                    </tr>
+                    <tr>
+                      <td>250845</td>
+                      <td>10/09/2019</td>
+                      <td>15:00</td>
+                      <th>โบนัสฟรี 100 บาท</th>
+                      <th>1</th>
+                    </tr>
+                    <tr>
+                      <td>250865</td>
+                      <td>10/09/2019</td>
+                      <td>15:09</td>
+                      <th>โบนัสฟรี 10 บาท</th>
+                      <th>1</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bonus Table -->
 </html>
 <!-- SCRIPTS -->
 <!-- JQuery -->
@@ -210,3 +510,15 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>

@@ -27,9 +27,10 @@
     <title>Register</title>
   </head>
   <body>
+    <!-- nav/side -->
     <div
       class="w3-sidebar w3-animate-left boder-right "
-      style="display:none; margin-top: 50px; z-index: 1024;"
+      style="display:none; margin-top: 3px; z-index: 1024;"
       id="mySidebar"
     >
       <div class="row ">
@@ -47,12 +48,12 @@
               <div class="text-center" style="padding: 5px">
                 <img src="img/user.png" alt="" width="50%" />
               </div>
-              <p class="mt-2 ml-2">
+              <p class="mt-2 ml-2 text-center">
                 <a style="color: black"
                   >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
                 >
               </p>
-              <p class="ml-2">
+              <p class="ml-2 text-center">
                 <a style="color: black"
                   >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
                 >
@@ -99,13 +100,13 @@
       </div>
       <div class="row ml-1">
         <div class="col-12 col-md-12 mt-2">
-          <p>
+          <h5>
             <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
             >918kiss
-          </p>
-          <p>
+          </h5>
+          <h5>
             <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
-          </p>
+          </h5>
         </div>
       </div>
     </div>
@@ -117,7 +118,7 @@
       id="myOverlay"
     ></div>
     <nav
-      class=" navbar navbar-expand-lg navbar-dark pink darken-4 "
+      class=" navbar navbar-expand-lg navbar-dark pink darken-4"
       style="z-index: 1025;"
     >
       <div class="container">
@@ -132,7 +133,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <a class="col-6 col-md-6 text-right">
+        <div class="col-6 col-md-6 text-right">
           <a class="button-collapse right_line" href="#!">
             <img src="img/logo.png" alt="" width="60px" />
           </a>
@@ -140,7 +141,9 @@
       </div>
     </nav>
 
-    <div class="container mt-2">
+    <!-- nav/side -->
+
+    <div class="container" style="margin-top:50px">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 mt-5">
           <h2 style="font-weight: bold; color: #ff5fa3">
@@ -178,7 +181,6 @@
                 name="bank"
                 id="sel_bank"
                 class="browser-default custom-select"
-                style="font-size: 1.5rem"
               >
                 <option selected>เลือกธนาคาร...</option>
                 <option value="1">ธนาคารกรุงศรี จำกัด (มหาชน)</option>
@@ -189,7 +191,7 @@
         </div>
       </div>
       <div class="text-center justify-content-center">
-        <a href="sel_bay.html"
+        <a data-toggle="modal" data-target="#rules"
           ><button
             class="btn peach-gradient rounded mt-5"
             style="font-weight: bold"
@@ -199,11 +201,101 @@
         >
       </div>
     </div>
-    <div class="row mt-5 footer">
-      <div class="col-12 text-center " style="color: #707070; ">
-        <h5>Copyright © Slot-auto.com All Right Reserved</h5>
+
+    <a href="sel_scb.html"
+      ><button type="button" class="btn btn-deep-purple">Choose SCB</button></a
+    >
+
+    <!-- footer -->
+    <div class="container" style="margin-top: 10%">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-2 col-3">
+          <img src="img/918kiss.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/joker.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/live22.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/slotxo.png" alt="" width="100%" />
+        </div>
+        <div class="col-12 credit_footer mt-3" style="color: #707070">
+          Copyright © Slot-auto.com All Right Reserved
+        </div>
       </div>
     </div>
+
+    <!-- Rules -->
+    <!-- Central Modal Small -->
+    <div
+      class="modal fade"
+      id="rules"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <!-- Change class .modal-sm to change the size of the modal -->
+      <div
+        class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4
+              class="modal-title w-100 text-center"
+              id="myModalLabel"
+              style="color: #ff5fa3"
+            >
+              คำเตือน
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              ต้องใช้บัญชีที่สมัคร ฝากเงินเข้ามาเท่านั้น
+              และต้องโอนเงินผ่านช้องทางแอพพลิเคชั่น ของธนาคารบานมือถือเท่านั้น
+              มิเช่นนั้นจะไม่สามารถยืนยันรายการฝากได้
+            </p>
+            <p>
+              ถ้าเกิดข้อผิดพลาดของระบบ ให้แจ้งกับพนักงานทันที
+              กรณีที่ไม่แจ้งเราขอสงวนสิทธิ์การถอนเงิน ทุกกรณี
+            </p>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="defaultUnchecked"
+              />
+              <label
+                class="custom-control-label"
+                for="defaultUnchecked"
+                style="color: #ff5fa3"
+                >ยอมรับเงื่อนไขทั้งหมด</label
+              >
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="sel_bay.html">
+              <button type="button" class="btn btn-primary btn-sm">
+                สมัครสมาชิก
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Central Modal Small -->
+    <!-- Rules -->
   </body>
 </html>
 <!-- SCRIPTS -->

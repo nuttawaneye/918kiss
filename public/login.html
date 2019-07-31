@@ -9,6 +9,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/register.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome -->
@@ -28,7 +29,7 @@
   <style>
     .centered {
       position: fixed;
-      top: 50%;
+      top: 45%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -36,27 +37,28 @@
   <body class="grad">
     <div class="container centered">
       <div class="row text-center justify-content-center">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 border-right">
           <img
             src="img/logo.png"
             alt="..."
             class=""
-            width="40%"
+            width="50%"
             height="auto"
           />
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-10 col-md-6 ">
           <div class="md-form">
             <input
               type="text"
               id="materialFormCardNameEx"
-              class="form-control"
+              class="form-control mt-3"
             />
             <label
               for="materialFormCardNameEx"
               class="font-weight-light text-white"
-              >กรอกหมายเลขโทรศัพท์ของคุณ</label
+              ><i class="fas fa-mobile-alt"></i>
+              กรอกหมายเลขโทรศัพท์ของคุณ</label
             >
           </div>
 
@@ -69,47 +71,133 @@
             <label
               for="materialFormCardNameEx"
               class="font-weight-light text-white"
-              >กำหนดรหัสผ่านสำหรับเข้าสู่ระบบ</label
+              ><i class="fas fa-key"></i> กรอกรหัสผ่านเพื่อเข้าสู่ระบบ</label
             >
           </div>
-          <p class="mt-3">
-            <a href="main.html">
-              <button type="button" class="btn btn-outline-light waves-effect">
-                เข้าสู่ระบบ
-              </button>
-            </a>
-            <a
-              href="register.html"
-              class="col-12 txt_underline mt-1"
-              style="color: #ffffff"
-            >
-              สมัครสมาชิก
-            </a>
-          </p>
+          <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-4">
+              <a href="main.html">
+                <button type="button" class="btn btn-outline-light">
+                  เข้าสู่ระบบ
+                </button>
+              </a>
+            </div>
+            <div class="col-12 col-md-4 mt-3">
+              <a
+                data-toggle="modal"
+                data-target="#rules"
+                class="col-12 txt_underline"
+                style="color: #ffffff"
+              >
+                สมัครสมาชิก
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- footer -->
-    <div class="row footer footerimg text-center justify-content-center">
-      <div class="col-3 col-sm-2">
-        <img src="img/918kiss.png" alt="" width="90%" />
-      </div>
-      <div class="col-3 col-sm-2">
-        <img src="img/joker.png" alt="" width="90%" />
-      </div>
-      <div class="col-3 col-sm-2">
-        <img src="img/live22.png" alt="" width="90%" />
-      </div>
-      <div class="col-3 col-sm-2">
-        <img src="img/slotxo.png" alt="" width="90%" />
-      </div>
-      <div
-        class="col-12 col-sm-12 mt-2 text-center credit_footer"
-        style="font-size: 12pt; color: #ffffff"
-      >
-        Copyright © Slot-auto.com All Right Reserved
+    <div class="container footer">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-2 col-3">
+          <img src="img/918kiss.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/joker.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/live22.png" alt="" width="100%" />
+        </div>
+        <div class="col-md-2 col-3">
+          <img src="img/slotxo.png" alt="" width="100%" />
+        </div>
+        <div class="col-12 credit_footer mt-3" style="color: #ffffff">
+          Copyright © Slot-auto.com All Right Reserved
+        </div>
       </div>
     </div>
+
+    <!-- Rules -->
+    <!-- Central Modal Small -->
+    <div
+      class="modal fade"
+      id="rules"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <!-- Change class .modal-sm to change the size of the modal -->
+      <div
+        class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4
+              class="modal-title w-100 text-center"
+              id="myModalLabel"
+              style="color: #ff5fa3"
+            >
+              โปรดอ่านก่อน
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              1. หมายเลขโทรศัทพ์ที่ใช้ ต้องสามารถรับ ข้อความได้
+              เพราะระบบจำเป็นต้องส่งรหัส ยืนยันไปยังหมายเลขโทรศัทพ์ของท่าน
+              มิเช่นนั้นจะไม่สามารถทำรายการต่างๆได้
+            </p>
+            <p>
+              2. ชื่อ - นามสกุล จะต้องตรงกับข้อมูลบัญชี
+              มิเช่นนั้นจะไม่สามารถถอนเงินได้
+            </p>
+            <p>
+              3. ต้องใช้บัญชีที่สมัครฝากเงินเข้ามาเท่านั้น
+            </p>
+            <p>
+              4. ถ้าเกิดข้อผิดพลาดของระบบ ให้ทำการ แจ้งพนักงานทันที
+              กรณีที่ไม่แจ้ง ทางเรา ขอสงวนสิทธิ์การถอนเงิน ทุกกรณี
+            </p>
+            <p>
+              5. สมาชิก 1 คน ต่อ 1 ไอดีเท่านั้น กรณีตรวจพบว่ามีการสมัครหลายไอดี
+              ทางเราจะสงวนสิทธิ์การถอน ทุกกรณี
+            </p>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="defaultUnchecked"
+              />
+              <label
+                class="custom-control-label"
+                for="defaultUnchecked"
+                style="color: #ff5fa3"
+                >ยอมรับเงื่อนไขทั้งหมด</label
+              >
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <a href="register.html">
+              <button type="button" class="btn btn-primary btn-sm">
+                สมัครสมาชิก
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Central Modal Small -->
+    <!-- Rules -->
   </body>
 </html>
 <!-- SCRIPTS -->

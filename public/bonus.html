@@ -9,7 +9,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome -->
     <link
@@ -22,89 +22,250 @@
     <link href="css/mdb.min.css" rel="stylesheet" />
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    <title>History</title>
+    <title>Bonus</title>
   </head>
   <body class="grad">
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-12">
-          <p style="color: white; font-size: 22pt; font-weight: bold">
-            โบนัสฟรี
-          </p>
+    <!-- nav/side -->
+    <div
+      class="w3-sidebar w3-animate-left boder-right "
+      style="display:none; margin-top: 3px; z-index: 1024;"
+      id="mySidebar"
+    >
+      <div class="row ">
+        <div class="col-12 col-md-12 ">
+          <div
+            class="row pt-4"
+            style="background: linear-gradient(
+            140deg,
+            rgba(255, 205, 104, 1) 0%,
+            rgba(255, 180, 112, 1) 20%,
+            rgba(255, 70, 148, 1) 100%
+          );"
+          >
+            <div class="col-11">
+              <div class="text-center" style="padding: 5px">
+                <img src="img/user.png" alt="" width="50%" />
+              </div>
+              <p class="mt-2 ml-2 text-center">
+                <a style="color: black"
+                  >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
+                >
+              </p>
+              <p class="ml-2 text-center">
+                <a style="color: black"
+                  >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
+                >
+              </p>
+              <p class="text-center" style="color: white">
+                <a href="userdata.html">ดูข้อมูลบัญชีของคุณ</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="list-group">
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light text-left"
-              style="font-size: 8pt"
+      <div class="row border-bottom w3-border-right mb-2">
+        <div class="col-12 col-md-12 mt-2">
+          <h6>
+            <a href="main.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i
+              >หน้าหลัก</a
             >
-              <div class="col-9"></div>
-              <p style="color: #ff5fa3; font-weight:bold; font-size:16pt">
-                คุณมีโบนัสฟรี!
-              </p>
-              Exp.12/07-14/07 กดเพื่อรับโบนัส
-            </a>
+          </h6>
+          <h6>
             <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light text-left"
-              style="font-size: 8pt"
+              href="https://www.918kissauto.com/"
+              class="w3-bar-item w3-button"
             >
-              <div class="col-9"></div>
-              <p style="color: #ff5fa3; font-weight:bold; font-size:16pt">
-                คุณมีโบนัสฟรี!
-              </p>
-              Exp.12/07-14/07 กดเพื่อรับโบนัส
+              <i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน
             </a>
+          </h6>
+
+          <h6>
             <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light text-left"
-              style="font-size: 8pt"
+              href="https://www.918kissauto.com/download.php"
+              class="w3-bar-item w3-button"
+              ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+              >ดาวน์โหลด</a
             >
-              <div class="col-9"></div>
-              <p style="color: #ff5fa3; font-weight:bold; font-size:16pt">
-                คุณมีโบนัสฟรี!
-              </p>
-              Exp.12/07-14/07 กดเพื่อรับโบนัส
-            </a>
+          </h6>
+          <h6>
+            <a href="login.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+              >ออกจากระบบ</a
+            >
+          </h6>
+        </div>
+      </div>
+      <div class="row ml-1">
+        <div class="col-12 col-md-12 mt-2">
+          <h5>
+            <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
+            >918kiss
+          </h5>
+          <h5>
+            <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w3-overlay w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer;"
+      id="myOverlay"
+    ></div>
+    <nav
+      class=" navbar navbar-expand-lg navbar-dark pink darken-4"
+      style="z-index: 1025;"
+    >
+      <div class="container">
+        <div class="col-6 col-md-6">
+          <button
+            class="navbar-toggler "
+            type="button"
+            onclick="w3_open()"
+            aria-expanded="false"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-6 col-md-6 text-right">
+          <a class="button-collapse right_line" href="#!">
+            <img src="img/logo.png" alt="" width="60px" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav/side -->
+
+    <div class="container" style="margin-top:50px">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mt-5">
+          <hh2 style="color: white; font-size: 22pt; font-weight: bold">
+              <i class="fas fa-gift"></i> โบนัสฟรี
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mt-5">
+          <div class="list-group h3">
+              <a
+              class="list-group-item list-group-item-action flex-column align-items-start" onclick="bonus_success()">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h4 class="mb-2" style="color: #ff5fa3; font-weight:bold">
+                        <i class="fas fa-coins" style="color: #fdd835"></i> คุณมีโบนัสฟรี!
+                    </h4>
+                    <h6>กดเพื่อรับโบนัส</h6>
+                  </div>
+                  <h6>Exp.12/07-14/07</h6>
+                </a>
+
+                <a class="list-group-item list-group-item-action flex-column align-items-start" onclick="bonus_success()">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h4 class="mb-2" style="color: #ff5fa3; font-weight:bold">
+                          <i class="fas fa-coins" style="color: #fdd835"></i> คุณมีโบนัสฟรี!
+                      </h4>
+                      <h6>กดเพื่อรับโบนัส</h6>
+                    </div>
+                    <h6>Exp.12/07-14/07</h6>
+                  </a>
+
+                  <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" onclick="bonus_success()">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mb-2" style="color: #ff5fa3; font-weight:bold">
+                            <i class="fas fa-coins" style="color: #fdd835"></i> คุณมีโบนัสฟรี!
+                        </h4>
+                        <h6>กดเพื่อรับโบนัส</h6>
+                      </div>
+                      <h6>Exp.12/07-14/07</h6>
+                    </a>
+
+                    <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" onclick="bonus_success()">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h4 class="mb-2" style="color: #ff5fa3; font-weight:bold">
+                              <i class="fas fa-coins" style="color: #fdd835"></i> คุณมีโบนัสฟรี!
+                          </h4>
+                          <h6>กดเพื่อรับโบนัส</h6>
+                        </div>
+                        <h6>Exp.12/07-14/07</h6>
+                      </a>
+
           </div>
         </div>
       </div>
     </div>
+
     <!-- footer -->
-    <div class="container">
-      <div class="row text-center footer footerimg justify-content-center">
-        <div class="col-md-2 col-3">
-          <img src="img/918kiss.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/joker.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/live22.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/slotxo.png" alt="" width="100%" />
-        </div>
-        <div
-          class="col-12 text-center credit_footer mt-3"
-          style="color: #ffffff"
-        >
-          Copyright © Slot-auto.com All Right Reserved
+    <div class="container" style="margin-top: 3%">
+        <div class="row text-center justify-content-center">
+          <div class="col-md-2 col-3">
+            <img src="img/918kiss.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/joker.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/live22.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/slotxo.png" alt="" width="100%" />
+          </div>
+          <div class="col-12 credit_footer mt-3" style="color: #ffffff">
+            Copyright © Slot-auto.com All Right Reserved
+          </div>
         </div>
       </div>
-    </div>
+
   </body>
-</html>
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
+  </html>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+  
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    function bonus_success(){
+      Swal.fire({
+  title: 'รับโบนัสฟรีจำนวน 10 บาท',
+  text: "ต้องทำยอดให้ถึง 20 บาท จึงจะสามารถถอนเงินได้",
+  imageUrl: 'img/coins.png',
+  imageWidth: 60,
+  imageHeight: 60,
+  confirmButtonColor: '#3085d6',
+  confirmButtonText: 'รับโบนัส'
+}).then((result)=>{
+  Swal.fire({
+  title: 'รับโบนัสสำเร็จ!',
+  imageUrl: 'img/bonus-alert.png',
+  imageWidth: 80,
+  imageHeight: 80,
+  imageAlt: 'Custom image',
+  animation: false}).then(result => {
+    if(result.value){
+      window.location.assign("bonus.html");
+    }
+  })
+})
+    }
+  </script>
+

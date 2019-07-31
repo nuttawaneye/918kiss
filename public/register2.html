@@ -29,22 +29,22 @@
   <style>
     .centered {
       position: fixed;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
   </style>
   <body>
-    <!-- nav / side -->
+    <!-- nav/side -->
     <div
-      class="w3-sidebar w3-bar-block w3-border-right"
-      style="display:none; margin-top: 50px; z-index: 1024;"
+      class="w3-sidebar w3-animate-left boder-right "
+      style="display:none; margin-top: 3px; z-index: 1024;"
       id="mySidebar"
     >
-      <div class="row">
-        <div class="col-12 col-md-12">
+      <div class="row ">
+        <div class="col-12 col-md-12 ">
           <div
-            class="row"
+            class="row pt-4"
             style="background: linear-gradient(
               140deg,
               rgba(255, 205, 104, 1) 0%,
@@ -52,21 +52,16 @@
               rgba(255, 70, 148, 1) 100%
             );"
           >
-            <div class="col-1 mt-5">
-              <a onclick="w3_close()" class="text-white ml-2"
-                ><i class="fas fa-times"></i
-              ></a>
-            </div>
             <div class="col-11">
               <div class="text-center" style="padding: 5px">
                 <img src="img/user.png" alt="" width="50%" />
               </div>
-              <p class="mt-2 ml-2">
+              <p class="mt-2 ml-2 text-center">
                 <a style="color: black"
                   >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
                 >
               </p>
-              <p class="ml-2">
+              <p class="ml-2 text-center">
                 <a style="color: black"
                   >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
                 >
@@ -78,147 +73,181 @@
           </div>
         </div>
       </div>
-      <div class="row border-bottom border-light mb-2">
+      <div class="row border-bottom w3-border-right mb-2">
         <div class="col-12 col-md-12 mt-2">
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i>หน้าหลัก</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
-            >ดาวน์โหลด</a
-          >
-          <a href="#" class="w3-bar-item w3-button"
-            ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
-            >ออกจากระบบ</a
-          >
+          <h6>
+            <a href="main.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i
+              >หน้าหลัก</a
+            >
+          </h6>
+          <h6>
+            <a
+              href="https://www.918kissauto.com/"
+              class="w3-bar-item w3-button"
+            >
+              <i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน
+            </a>
+          </h6>
+
+          <h6>
+            <a
+              href="https://www.918kissauto.com/download.php"
+              class="w3-bar-item w3-button"
+              ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+              >ดาวน์โหลด</a
+            >
+          </h6>
+          <h6>
+            <a href="login.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+              >ออกจากระบบ</a
+            >
+          </h6>
         </div>
       </div>
       <div class="row ml-1">
         <div class="col-12 col-md-12 mt-2">
-          <p>
+          <h5>
             <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
             >918kiss
-          </p>
-          <p>
+          </h5>
+          <h5>
             <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
-          </p>
+          </h5>
         </div>
       </div>
     </div>
-    <!-- nav / side -->
 
-    <div class="w3-teal no-content pink darken-4  fixed-top">
-      <div class="w3-container">
-        <div class="row">
-          <div class="col-6">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">
-              ☰
-            </button>
-          </div>
-          <div class="col-6">
-            <a
-              class="button-collapse right_line"
-              href="#!"
-              style="margin-right: 0%; margin-left: 80%"
-            >
-              <img src="img/logo.png" alt="" width="15%" />
+    <div
+      class="w3-overlay w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer;"
+      id="myOverlay"
+    ></div>
+    <nav
+      class=" navbar navbar-expand-lg navbar-dark pink darken-4"
+      style="z-index: 1025;"
+    >
+      <div class="container">
+        <div class="col-6 col-md-6">
+          <button
+            class="navbar-toggler "
+            type="button"
+            onclick="w3_open()"
+            aria-expanded="false"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-6 col-md-6 text-right">
+          <a class="button-collapse right_line" href="#!">
+            <img src="img/logo.png" alt="" width="60px" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav/side -->
+
+    <div class="container" style="margin-top: 50px">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mt-5">
+          <h2 class="clearfix">
+            <a style="color: #ff5fa3; font-weight: bold; font-size: 32pt">
+                <i class="fas fa-user-cog"></i> ข้อมูลบัญชี
             </a>
+          </h2>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 100%;"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>   
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container centered">
-      <div class="row">
-        <nav class="container-fluid">
-          <div class="col-12 col-md-12">
-            <p class="clearfix">
-              <a style="color: #ff5fa3; font-weight: bold; font-size: 32pt">
-                ข้อมูลบัญชีของคุณ
-              </a>
-            </p>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 100%;"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="md-form">
+                    <select class="browser-default custom-select">
+                      <option selected>เลือกธนาคารของคุณ</option>
+                      <option value="1">กสิกร จำกัด (มหาชน)</option>
+                      <option value="2">ไทยพาณิช์ จำกัด (มหาชน)</option>
+                      <option value="3">กรุงไทย จำกัด (มหาชน)</option>
+                    </select>
+                  </div>
             </div>
-
-            <div class="col-12 col-md-12 justify-content-center mt-3">
+          <div class="col-12 col-md-10 col-lg-8">
               <div class="md-form">
-                <select class="browser-default custom-select">
-                  <option selected>เลือกธนาคารของคุณ</option>
-                  <option value="1">กสิกร จำกัด (มหาชน)</option>
-                  <option value="2">ไทยพาณิช์ จำกัด (มหาชน)</option>
-                  <option value="3">กรุงไทย จำกัด (มหาชน)</option>
-                </select>
-              </div>
-              <div class="md-form">
-                <input
-                  type="text"
-                  id="materialFormCardNameEx"
-                  class="form-control"
-                />
-                <label for="materialFormCardNameEx" class="font-weight-light"
-                  >กรอกหมายเลขโทรศัพท์ของคุณ</label
-                >
-              </div>
-              <div class="md-form">
-                <input
-                  type="text"
-                  id="materialFormCardNameEx"
-                  class="form-control"
-                />
-                <label for="materialFormCardNameEx" class="font-weight-light"
-                  >กำหนดรหัสผ่านสำหรับเข้าสู่ระบบ</label
-                >
-              </div>
-              <div class="text-center justify-content-center">
-                <a href="login.html"
-                  ><button
-                    class="btn peach-gradient rounded"
-                    style="font-weight: bold"
+                  <input
+                    type="text"
+                    id="materialFormCardNameEx"
+                    class="form-control"
+                  />
+                  <label for="materialFormCardNameEx" class="font-weight-light"
+                    >หมายเลขบัญชีธนาคารของคุณ</label
                   >
-                    สมัครสมาชิก
-                  </button></a
-                >
-              </div>
-            </div>
+                </div>
           </div>
-        </nav>
+          <div class="col-12 col-md-10 col-lg-8">
+              <div class="md-form">
+                  <input
+                    type="text"
+                    id="materialFormCardNameEx"
+                    class="form-control"
+                  />
+                  <label for="materialFormCardNameEx" class="font-weight-light"
+                  >ชื่อ - นามสกุล ที่ตรงกับบัญชีธนาคาร</label
+                  >
+                </div>
+          </div>
+        </div>
+
+        <div class="text-center justify-content-center mt-5">
+            <h4>
+                <a href="login.html"
+                ><button
+                  class="btn peach-gradient rounded"
+                  style="font-weight: bold"
+                >
+                  สมัครสมาชิก
+                </button></a
+              >
+            </h4>
+            
+          </div>
       </div>
     </div>
 
     <!-- footer -->
-    <div class="container">
-      <div class="row text-center footer footerimg justify-content-center">
-        <div class="col-md-2 col-3">
-          <img src="img/918kiss.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/joker.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/live22.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/slotxo.png" alt="" width="100%" />
-        </div>
-        <div
-          class="col-12 text-center credit_footer mt-3"
-          style="color: #707070"
-        >
-          Copyright © Slot-auto.com All Right Reserved
+    <div class="container" style="margin-top: 10%">
+        <div class="row text-center justify-content-center">
+          <div class="col-md-2 col-3">
+            <img src="img/918kiss.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/joker.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/live22.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/slotxo.png" alt="" width="100%" />
+          </div>
+          <div
+            class="col-12 credit_footer mt-3"
+            style="color: #707070"
+          >
+            Copyright © Slot-auto.com All Right Reserved
+          </div>
         </div>
       </div>
-    </div>
 
     <script>
       function w3_open() {
@@ -241,3 +270,15 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>

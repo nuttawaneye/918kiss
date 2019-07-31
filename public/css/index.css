@@ -8,7 +8,7 @@ html,
 body {
   height: 100%;
   font-family: myFirstFont !important;
-  font-size: 62.5% !important;
+  /* font-size: 62.5% !important; */
 }
 
 body {
@@ -163,4 +163,60 @@ p {
 }
 .navbar-toggler {
   display: block !important;
+}
+
+.list-group-item {
+  border-radius: 10px !important;
+}
+.w3-sidebar {
+  width: 250px !important;
+}
+.td {
+  color: grey !important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+  background-color: #8bc34a !important;
+  border-color: #8bc34a !important;
+}
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+  background-color: white !important;
+  z-index: 1025 !important;
+}
+.swal2-styled.swal2-confirm {
+  background: linear-gradient(
+    140deg,
+    rgba(255, 205, 104, 1) 0%,
+    rgba(255, 180, 112, 1) 20%,
+    rgba(255, 70, 148, 1) 100%
+  ) !important;
+}
+.swal2-title {
+  color: #ff5fa3 !important;
+}
+.swal2-icon.swal2-error {
+  background-color: #f27474 !important;
+}
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+  background-color: white !important;
+  z-index: 1025 !important;
+}
+
+.swal2-icon.swal2-warning {
+  background-color: #ffbb33 !important;
+  border-color: #ffbb33 !important;
+  color: #212121 !important;
+}
+.btn-primary {
+  background: linear-gradient(
+    140deg,
+    rgba(255, 205, 104, 1) 0%,
+    rgba(255, 180, 112, 1) 20%,
+    rgba(255, 70, 148, 1) 100%
+  ) !important;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.modal-footer {
+  border-top: none !important;
 }

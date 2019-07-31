@@ -22,10 +22,9 @@
         <link href="css/mdb.min.css" rel="stylesheet" />
         <!-- Your custom styles (optional) -->
         <link href="css/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     
-        <title>Main</title>
+        <title>User data</title>
       </head>
       <style>
           .centered {
@@ -37,72 +36,134 @@
         </style>
   <body class="grad">
 
-    <!-- nav / side -->
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none; margin-top: 46px; z-index: 1024;" id="mySidebar">
-        <div class="row">
-          <div class="col-12 col-md-12">
-            <div class="row" style="background: linear-gradient(
+    <!-- nav/side -->
+    <div
+      class="w3-sidebar w3-animate-left boder-right "
+      style="display:none; margin-top: 3px; z-index: 1024;"
+      id="mySidebar"
+    >
+      <div class="row ">
+        <div class="col-12 col-md-12 ">
+          <div
+            class="row pt-4"
+            style="background: linear-gradient(
               140deg,
               rgba(255, 205, 104, 1) 0%,
               rgba(255, 180, 112, 1) 20%,
               rgba(255, 70, 148, 1) 100%
-            );">
-              <div class="col-1 mt-5">
-                <a onclick="w3_close()" class="text-white ml-2"><i class="fas fa-times"></i></a>
+            );"
+          >
+            <div class="col-11">
+              <div class="text-center" style="padding: 5px">
+                <img src="img/user.png" alt="" width="50%" />
               </div>
-              <div class="col-11" >
-                <div class="text-center" style="padding: 5px"><img src="img/user.png" alt="" width="50%"></div>
-                <p class="mt-2 ml-2"><a style="color: black">ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a></p>
-                <p class="ml-2"><a style="color: black">รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a></p>
-                <p class="text-center" style="color: white" ><a href="userdata_desk.html">ดูข้อมูลบัญชีของคุณ</a></p>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="row border-bottom border-light mb-2">
-            <div class="col-12 col-md-12 mt-2">
-                <a href="main.html" class="w3-bar-item w3-button"><i class="fas fa-home mr-3" style="color: #FF5FA3"></i>หน้าหลัก</a>
-                <a href="#" class="w3-bar-item w3-button"><i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน</a>
-                <a href="#" class="w3-bar-item w3-button"><i class="fas fa-download mr-3" style="color: #FF5FA3"></i>ดาวน์โหลด</a>
-                <a href="#" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i>ออกจากระบบ</a>
-            </div>
-          </div>
-          <div class="row ml-1">
-            <div class="col-12 col-md-12 mt-2">
-                <p><i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i>918kiss</p>
-                <p><i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2</p>
+              <p class="mt-2 ml-2 text-center">
+                <a style="color: black"
+                  >ยูสเซอร์เกมส์ :<a style="color: white">0259791253</a></a
+                >
+              </p>
+              <p class="ml-2 text-center">
+                <a style="color: black"
+                  >รหัสผ่านเข้าเกมส์ :<a style="color: white">Aa112233</a></a
+                >
+              </p>
+              <p class="text-center" style="color: white">
+                <a href="userdata.html">ดูข้อมูลบัญชีของคุณ</a>
+              </p>
             </div>
           </div>
         </div>
-        <!-- nav / side -->
+      </div>
+      <div class="row border-bottom w3-border-right mb-2">
+        <div class="col-12 col-md-12 mt-2">
+          <h6>
+            <a href="main.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-home mr-3" style="color: #FF5FA3"></i
+              >หน้าหลัก</a
+            >
+          </h6>
+          <h6>
+            <a
+              href="https://www.918kissauto.com/"
+              class="w3-bar-item w3-button"
+            >
+              <i class="fas fa-tag mr-3" style="color: #FF5FA3"></i>โปรโมชัน
+            </a>
+          </h6>
 
-    <div class="w3-teal no-content pink darken-4  fixed-top">
-        <div class="w3-container">
-          <div class="row">
-              <div class="col-6">
-                  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()"><i class="fas fa-bars fa-lg mt-2"></i></button>
-              </div>
-              <div class="col-6">
-                  <a class="button-collapse right_line" href="#!" style="margin-right: 0%; margin-left: 80%">
-                      <img src="img/logo.png" alt="" width="15%">
-                  </a>
-              </div>
-          </div>  
+          <h6>
+            <a
+              href="https://www.918kissauto.com/download.php"
+              class="w3-bar-item w3-button"
+              ><i class="fas fa-download mr-3" style="color: #FF5FA3"></i
+              >ดาวน์โหลด</a
+            >
+          </h6>
+          <h6>
+            <a href="login.html" class="w3-bar-item w3-button"
+              ><i class="fas fa-sign-out-alt mr-3" style="color: #FF5FA3"></i
+              >ออกจากระบบ</a
+            >
+          </h6>
         </div>
-       </div>
+      </div>
+      <div class="row ml-1">
+        <div class="col-12 col-md-12 mt-2">
+          <h5>
+            <i class="fab fa-facebook-square mr-3" style="color: #1679F0"></i
+            >918kiss
+          </h5>
+          <h5>
+            <i class="fab fa-line mr-3" style="color: #00C200"></i>@918kissauto2
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w3-overlay w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer;"
+      id="myOverlay"
+    ></div>
+    <nav
+      class=" navbar navbar-expand-lg navbar-dark pink darken-4"
+      style="z-index: 1025;"
+    >
+      <div class="container">
+        <div class="col-6 col-md-6">
+          <button
+            class="navbar-toggler "
+            type="button"
+            onclick="w3_open()"
+            aria-expanded="false"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-6 col-md-6 text-right">
+          <a class="button-collapse right_line" href="#!">
+            <img src="img/logo.png" alt="" width="60px" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav/side -->
 
        
        <!-- content -->
-    <div class="w3-container">
-        <div class="row justify-content-center" style="margin-top: 15%"> 
-            <div class="col-12 col-md-6">
-                <p
-                class="text-center"
-                style="font-size: 20pt; color: #FFFFFF; font-weight: bold"
-                >
-                ข้อมูลบัญชีของคุณ
-            </p>
-            </div>
+    <div class="container" style="margin-top:50px">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-8 mt-5">
+              <p
+              class="text-center"
+              style="font-size: 20pt; color: #FFFFFF; font-weight: bold"
+              >
+              ข้อมูลบัญชีของคุณ
+          </p>
+          </div>
           </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -121,49 +182,49 @@
                       <div class="row mt-3 justify-content-center">
                         <div class="col-6 col-md-3  text-center border-right border-light">
                           <img src="img/coins.png" alt="" width="30%" />
-                          <div class="mt-1">
-                            <p style="font-weight: bold; font-size: 10pt; color: black">ยอดเงิน</p>
-                            <p style="font-size: 14pt; color: #FFFFFF; font-weight: bold">48 บาท</p>
+                          <div class="mt-1 h4">
+                            <p style="font-weight: bold; color: black">ยอดเงิน</p>
+                            <p style="color: #FFFFFF; font-weight: bold">48 บาท</p>
                           </div>
                         </div>
           
                         <div class="col-6 col-md-3 text-center">
                           <img src="img/medal.png" alt="" width="30%" />
-                          <div class="mt-1">
-                                  <p style="font-weight: bold; font-size: 10pt; color: black">แต้มสะสม</p>
-                                  <p style="font-size: 14pt; color: #FFFFFF; font-weight: bold">0 แต้ม</p>
+                          <div class="mt-1 h4">
+                                  <p style="font-weight: bold;color: black">แต้มสะสม</p>
+                                  <p style="color: #FFFFFF; font-weight: bold">0 แต้ม</p>
                           </div>
                         </div>
                       </div>
           
                       <!--data-->
                       <div class="row text-center justify-content-center mt-3">
-                          <div class="col-8 col-md-5">
-                              <div class="row" style="font-size: 10pt">
+                          <div class="col-8 col-md-4 h6">
+                              <div class="row">
                                   <p>
                                       <p style="color:black; font-weight: bold">ธนาคาร :</p>
                                       <p style="color: white; font-weight: bold">ไทยพาณิชย์</p>
                                   </p>
                               </div>
-                              <div class="row " style="font-size: 10pt">
+                              <div class="row ">
                                   <p>
                                       <p style="color:black; font-weight: bold">เลขที่ :</p>
                                       <p style="color: white; font-weight: bold">5282406810</p>
                                   </p>
                               </div>
-                              <div class="row " style="font-size: 10pt">
+                              <div class="row ">
                                   <p>
                                       <p style="color:black; font-weight: bold">ชื่อ :</p>
                                       <p style="color: white; font-weight: bold">เอกพัน วรีฤ</p>
                                   </p>
                               </div>
-                              <div class="row " style="font-size: 10pt">
+                              <div class="row ">
                                   <p>
                                       <p style="color:black; font-weight: bold">เบอร์โทร :</p>
                                       <p style="color: white; font-weight: bold">085-436-5654</p>
                                   </p>
                               </div>
-                              <div class="row " style="font-size: 10pt">
+                              <div class="row ">
                                   <p>
                                       <p style="color:black; font-weight: bold">วันที่สมัคร :</p>
                                       <p style="color: white; font-weight: bold">2019 - 03 - 10  14:52:33</p>
@@ -183,27 +244,24 @@
 
     <!-- footer -->
     <div class="container" style="margin-top: 10%">
-      <div class="row text-center justify-content-center">
-        <div class="col-md-2 col-3">
-          <img src="img/918kiss.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/joker.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/live22.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/slotxo.png" alt="" width="100%" />
-        </div>
-        <div
-          class="col-12 credit_footer mt-3"
-          style="color: #707070"
-        >
-          Copyright © Slot-auto.com All Right Reserved
+        <div class="row text-center justify-content-center">
+          <div class="col-md-2 col-3">
+            <img src="img/918kiss.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/joker.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/live22.png" alt="" width="100%" />
+          </div>
+          <div class="col-md-2 col-3">
+            <img src="img/slotxo.png" alt="" width="100%" />
+          </div>
+          <div class="col-12 credit_footer mt-3" style="color: #ffffff">
+            Copyright © Slot-auto.com All Right Reserved
+          </div>
         </div>
       </div>
-    </div>
 
     <script>
         function w3_open() {
@@ -215,14 +273,27 @@
         }
         </script>
   </body>
-</html>
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  </html>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+  
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    function alert() {}
+  </script>
