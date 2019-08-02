@@ -188,9 +188,8 @@ h6 {
   background: rgb(255, 205, 104);
   background: linear-gradient(
     140deg,
-    rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 40%,
-    rgba(255, 70, 70, 1) 100%
+    rgba(255, 228, 74, 1) 0%,
+    rgba(83, 202, 227, 1) 100%
   ) !important;
 }
 .pink.accent-1 {
@@ -1259,9 +1258,9 @@ ul.stepper li.warning a .circle {
   background: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
 }
 .peach-gradient {
-  background: -webkit-linear-gradient(10deg, #FFCD68, #FFB470,#FF4646) !important;
-  background: -o-linear-gradient(30deg, #FFCD68, #FFB470,#FF4646) !important;
-  background: linear-gradient(100deg, #FFCD68, #FFB470,#FF4646) !important; }
+  background: -webkit-linear-gradient(10deg, #FFE44A, #53CAE3) !important;
+  background: -o-linear-gradient(30deg, #FFE44A, #53CAE3) !important;
+  background: linear-gradient(100deg, #FFE44A, #53CAE3) !important; }
 .aqua-gradient {
   background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
   background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
@@ -1290,9 +1289,9 @@ ul.stepper li.warning a .circle {
   ) !important;
 }
 .peach-gradient-rgba {
-  background: -webkit-linear-gradient(10deg, #FFCD68, #FFB470,#FF4646) !important;
-  background: -o-linear-gradient(30deg, #FFCD68, #FFB470,#FF4646) !important;
-  background: linear-gradient(100deg, #FFCD68, #FFB470,#FF4646) !important; }
+  background: -webkit-linear-gradient(10deg, #FFE44A, #53CAE3) !important;
+  background: -o-linear-gradient(30deg, #FFE44A, #53CAE3) !important;
+  background: linear-gradient(100deg, #FFE44A, #53CAE3) !important; }
 .aqua-gradient-rgba {
   background: -webkit-linear-gradient(
     50deg,

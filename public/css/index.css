@@ -41,9 +41,8 @@ p {
   background: rgb(255, 205, 104);
   background: linear-gradient(
     140deg,
-    rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 40%,
-    rgba(255, 70, 70, 1) 100%
+    rgba(255, 228, 74, 1) 0%,
+    rgba(83, 202, 227, 1) 100%
   );
   background-attachment: fixed;
 }
@@ -159,7 +158,7 @@ p {
 }
 
 .progress-bar {
-  background-color: #fe5600 !important;
+  background-color: #26c9d5 !important;
 }
 .navbar-toggler {
   display: block !important;
@@ -185,13 +184,12 @@ p {
 .swal2-styled.swal2-confirm {
   background: linear-gradient(
     140deg,
-    rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 40%,
-    rgba(255, 70, 70, 1) 100%
+    rgba(255, 228, 74, 1) 0%,
+    rgba(83, 202, 227, 1) 100%
   ) !important;
 }
 .swal2-title {
-  color: #fe5600 !important;
+  color: #26c9d5 !important;
 }
 .swal2-icon.swal2-error {
   background-color: #f27474 !important;
@@ -209,9 +207,8 @@ p {
 .btn-primary {
   background: linear-gradient(
     140deg,
-    rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 40%,
-    rgba(255, 70, 70, 1) 100%
+    rgba(255, 228, 74, 1) 0%,
+    rgba(83, 202, 227, 1) 100%
   ) !important;
 }
 .modal-header {

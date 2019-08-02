@@ -16,9 +16,8 @@ body {
   background: rgb(255, 205, 104);
   background: linear-gradient(
     140deg,
-    rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 40%,
-    rgba(255, 70, 70, 1) 100%
+    rgba(255, 228, 74, 1) 0%,
+    rgba(83, 202, 227, 1) 100%
   );
   background-attachment: fixed;
 }
@@ -162,9 +161,8 @@ table {
   background: rgb(255, 205, 104);
   background: linear-gradient(
     140deg,
-    rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 40%,
-    rgba(255, 70, 70, 1) 100%
+    rgba(255, 228, 74, 1) 0%,
+    rgba(83, 202, 227, 1) 100%
   ) !important;
   background-attachment: fixed !important;
 }
