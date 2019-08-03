@@ -1,7 +1,7 @@
 /* @import url("../font/SukhumvitSet.ttc"); */
 @font-face {
   font-family: myFirstFont;
-  src: url("../font/SukhumvitSet.ttc");
+  src: url("../font/Mitr-Light.ttf");
 }
 
 html,
@@ -216,4 +216,7 @@ p {
 }
 .modal-footer {
   border-top: none !important;
+}
+.btn-secondary {
+  background-color: #7a58bf !important;
 }

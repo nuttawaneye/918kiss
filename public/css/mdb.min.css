@@ -187,9 +187,9 @@ h6 {
   /* background-color: #880e4f !important; */
   background: rgb(255, 205, 104);
   background: linear-gradient(
-    140deg,
-    rgba(255, 228, 74, 1) 0%,
-    rgba(83, 202, 227, 1) 100%
+    180deg,
+    rgba(44, 18, 81, 1) 0%,
+    rgba(70, 34, 121, 1) 100%
   ) !important;
 }
 .pink.accent-1 {
@@ -1258,9 +1258,9 @@ ul.stepper li.warning a .circle {
   background: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
 }
 .peach-gradient {
-  background: -webkit-linear-gradient(10deg, #FFE44A, #53CAE3) !important;
-  background: -o-linear-gradient(30deg, #FFE44A, #53CAE3) !important;
-  background: linear-gradient(100deg, #FFE44A, #53CAE3) !important; }
+  background: -webkit-linear-gradient(10deg, #7A58BF, #7A58BF) !important;
+  background: -o-linear-gradient(30deg, #7A58BF, #7A58BF) !important;
+  background: linear-gradient(100deg, #7A58BF, #7A58BF) !important; }
 .aqua-gradient {
   background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
   background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
@@ -1289,9 +1289,9 @@ ul.stepper li.warning a .circle {
   ) !important;
 }
 .peach-gradient-rgba {
-  background: -webkit-linear-gradient(10deg, #FFE44A, #53CAE3) !important;
-  background: -o-linear-gradient(30deg, #FFE44A, #53CAE3) !important;
-  background: linear-gradient(100deg, #FFE44A, #53CAE3) !important; }
+  background: -webkit-linear-gradient(10deg, #7A58BF, #7A58BF) !important;
+  background: -o-linear-gradient(30deg, #7A58BF, #7A58BF) !important;
+  background: linear-gradient(100deg, #7A58BF, #7A58BF) !important; }
 .aqua-gradient-rgba {
   background: -webkit-linear-gradient(
     50deg,
