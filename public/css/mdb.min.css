@@ -189,8 +189,8 @@ h6 {
   background: linear-gradient(
     140deg,
     rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 20%,
-    rgba(255, 70, 148, 1) 100%
+    rgba(255, 180, 112, 1) 40%,
+    rgba(255, 70, 70, 1) 100%
   ) !important;
 }
 .pink.accent-1 {
@@ -1259,10 +1259,9 @@ ul.stepper li.warning a .circle {
   background: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
 }
 .peach-gradient {
-  background: -webkit-linear-gradient(90deg, #ffcd68, #ff4694) !important;
-  background: -o-linear-gradient(90deg, #ffcd68, #ff4694) !important;
-  background: linear-gradient(90deg, #ffcd68, #ff4694) !important;
-}
+  background: -webkit-linear-gradient(10deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: -o-linear-gradient(30deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: linear-gradient(100deg, #FFCD68, #FFB470,#FF4646) !important; }
 .aqua-gradient {
   background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
   background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
@@ -1291,22 +1290,9 @@ ul.stepper li.warning a .circle {
   ) !important;
 }
 .peach-gradient-rgba {
-  background: -webkit-linear-gradient(
-    50deg,
-    rgba(255, 216, 111, 0.9),
-    rgba(252, 98, 98, 0.9)
-  ) !important;
-  background: -o-linear-gradient(
-    50deg,
-    rgba(255, 216, 111, 0.9),
-    rgba(252, 98, 98, 0.9)
-  ) !important;
-  background: linear-gradient(
-    40deg,
-    rgba(255, 216, 111, 0.9),
-    rgba(252, 98, 98, 0.9)
-  ) !important;
-}
+  background: -webkit-linear-gradient(10deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: -o-linear-gradient(30deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: linear-gradient(100deg, #FFCD68, #FFB470,#FF4646) !important; }
 .aqua-gradient-rgba {
   background: -webkit-linear-gradient(
     50deg,

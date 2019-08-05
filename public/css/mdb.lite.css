@@ -1235,9 +1235,9 @@
   background: linear-gradient(40deg, #ff6ec4, #7873f5) !important; }
 
 .peach-gradient {
-  background: -webkit-linear-gradient(50deg, #ffcd68, #ff4694) !important;
-  background: -o-linear-gradient(50deg, #ffcd68, #ff4694) !important;
-  background: linear-gradient(40deg, #ffcd68, #ff4694) !important; }
+  background: -webkit-linear-gradient(10deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: -o-linear-gradient(30deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: linear-gradient(100deg, #FFCD68, #FFB470,#FF4646) !important; }
 
 .aqua-gradient {
   background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
@@ -1255,9 +1255,9 @@
   background: linear-gradient(40deg, rgba(255, 110, 196, 0.9), rgba(120, 115, 245, 0.9)) !important; }
 
 .peach-gradient-rgba {
-  background: -webkit-linear-gradient(50deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important;
-  background: -o-linear-gradient(50deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important;
-  background: linear-gradient(40deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important; }
+  background: -webkit-linear-gradient(10deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: -o-linear-gradient(30deg, #FFCD68, #FFB470,#FF4646) !important;
+  background: linear-gradient(100deg, #FFCD68, #FFB470,#FF4646) !important; }
 
 .aqua-gradient-rgba {
   background: -webkit-linear-gradient(50deg, rgba(32, 150, 255, 0.9), rgba(5, 255, 163, 0.9)) !important;
