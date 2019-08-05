@@ -178,7 +178,11 @@ h6 {
   background-color: #d81b60 !important;
 }
 .pink.darken-2 {
-  background-color: #c2185b !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 82, 114, 1) 0%,
+    rgba(0, 164, 228, 1) 100%
+  ) !important;
 }
 .pink.darken-3 {
   background: linear-gradient(
@@ -1270,10 +1274,9 @@ ul.stepper li.warning a .circle {
   background: -o-linear-gradient(50deg, #5CA17D, #5CA17D) !important;
   background: linear-gradient(40deg, #5CA17D, #5CA17D) !important; }
 .blue-gradient {
-  background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: linear-gradient(40deg, #45cafc, #303f9f) !important;
-}
+  background: -webkit-linear-gradient(50deg, #6BD6FF, #6BD6FF) !important;
+  background: -o-linear-gradient(50deg, #6BD6FF, #6BD6FF) !important;
+  background: linear-gradient(40deg, #6BD6FF, #6BD6FF) !important; }
 .purple-gradient-rgba {
   background: -webkit-linear-gradient(
     50deg,
