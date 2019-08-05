@@ -168,7 +168,12 @@
   background-color: #c2185b !important; }
 
 .pink.darken-3 {
-  background-color: #ad1457 !important; }
+  background: linear-gradient(
+    180deg,
+    rgba(32, 44, 43, 1) 0%,
+    rgba(0, 169, 80, 1) 100%
+  ) !important;
+}
 
 .pink.darken-4 {
   background-color: #880e4f !important; }
@@ -1240,9 +1245,9 @@
   background: linear-gradient(100deg, #7A58BF, #7A58BF) !important; }
 
 .aqua-gradient {
-  background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-  background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-  background: linear-gradient(40deg, #2096ff, #05ffa3) !important; }
+  background: -webkit-linear-gradient(50deg, #5CA17D #5CA17D) !important;
+  background: -o-linear-gradient(50deg, #5CA17D, #5CA17D) !important;
+  background: linear-gradient(40deg, #5CA17D, #5CA17D) !important; }
 
 .blue-gradient {
   background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
