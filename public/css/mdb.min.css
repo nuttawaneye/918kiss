@@ -175,7 +175,11 @@ h6 {
   background-color: rgba(233, 30, 99, 0.7);
 }
 .pink.darken-1 {
-  background-color: #d81b60 !important;
+  background: linear-gradient(
+    180deg,
+    rgb(9, 21, 70) 0%,
+    rgb(0, 51, 153) 100%
+  ) !important;
 }
 .pink.darken-2 {
   background: linear-gradient(
@@ -201,11 +205,18 @@ h6 {
   ) !important;
 }
 .pink.accent-1 {
-  background-color: #ff80ab !important;
+  background: linear-gradient(
+    180deg,
+    rgb(155, 3, 79) 0%,
+    rgba(239, 83, 144, 1) 100%
+  ) !important;
 }
 .pink.accent-2 {
-  background-color: #ff4081 !important;
-}
+  background: linear-gradient(
+    180deg,
+    rgb(44, 37, 37) 0%,
+    rgba(111, 95, 94, 1) 100%
+  ) !important; }
 .pink.accent-3 {
   background-color: #f50057 !important;
 }
@@ -1261,10 +1272,9 @@ ul.stepper li.warning a .circle {
   background-color: #263238 !important;
 }
 .purple-gradient {
-  background: -webkit-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-  background: -o-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-  background: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
-}
+  background: -webkit-linear-gradient(50deg, #093386, #093386) !important;
+  background: -o-linear-gradient(50deg, #093386, #093386) !important;
+  background: linear-gradient(40deg, #093386, #093386) !important; }
 .peach-gradient {
   background: -webkit-linear-gradient(10deg, #7A58BF, #7A58BF) !important;
   background: -o-linear-gradient(30deg, #7A58BF, #7A58BF) !important;
