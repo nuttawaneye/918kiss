@@ -1903,7 +1903,7 @@ a.text-light:hover, a.text-light:focus {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); }
+   }
 
 .waves-button,
 .waves-button:hover,
@@ -1954,7 +1954,7 @@ a.text-light:hover, a.text-light:focus {
   border-radius: 50%; }
 
 .waves-float {
-  -webkit-mask-image: none;
+  
   -webkit-box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12);
   -webkit-transition: all 300ms;
