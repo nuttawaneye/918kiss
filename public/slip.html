@@ -32,37 +32,25 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    .bg {
+      background: rgb(93, 11, 143);
+      background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .card {
+      background-color: rgb(255, 255, 255) !important;
+    }
   </style>
-  <body>
-    <!-- nav/side -->
-    <div
-      class="w3-overlay w3-animate-opacity"
-      onclick="w3_close()"
-      style="cursor:pointer;"
-      id="myOverlay"
-    ></div>
-    <nav
-      class=" navbar navbar-expand-lg navbar-dark pink accent-2"
-      style="z-index: 1025;"
-    >
-      <div class="container text-left">
-        <div class="col-12 col-md-6 text-left">
-          <a
-            class="button-collapse right_line h4"
-            style="color: white"
-            href="index.html"
-          >
-            <img src="img/bay-icon.png" alt="" width="45px" />
-            ธนาคารกรุงศรี
-          </a>
-        </div>
+  <body class="bg">
+    <div class="row justify-content-center text-center mt-3">
+      <div class="col-12 col-md-6 col-lg-6">
+        <img src="img/aba.png" alt="" width="40%" />
       </div>
-    </nav>
-
-    <!-- nav/side -->
-    <div class="container centered mt-5">
+    </div>
+    <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-6 ">
+        <div class="col-12 col-md-8 col-lg-8 ">
           <!-- Card -->
           <div class="card justify-content-center mt-5">
             <div class="row ml-1 mt-2 text-black-50">
@@ -81,7 +69,7 @@
             <!-- Card content -->
             <div class="card-body justify-content-center">
               <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-8">
+                <div class="col-12 col-md-10 col-lg-10">
                   <div class="row ">
                     <div class="col-6 col-md-6">
                       <p class="card-text">
@@ -143,9 +131,18 @@
       </div>
 
       <!-- Card -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-6">
-          <p><i class="fas fa-save mt-4 mr-1"></i>บันทึกใบเสร็จ</p>
+
+      <div class="row justify-content-center text-center mt-4">
+        <div class="col-12 col-md-8 col-lg-8">
+          <a href="scb-check.html"
+            ><button
+              type="button"
+              class="btn blue darken-1 btn-lg btn-block"
+              style="color: white"
+            >
+              <i class="fas fa-image mr-2"></i>บันทึกรูปภาพ
+            </button></a
+          >
         </div>
       </div>
     </div>
