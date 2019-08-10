@@ -8,8 +8,6 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome -->
     <link
@@ -24,56 +22,37 @@
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    <title>SCB</title>
+    <title>Wallet</title>
   </head>
-  <style>
-    .centered {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .round-btn {
-      border-radius: 50px;
-      -moz-border-radius: 50px;
-      -webkit-border-radius: 50px;
-      border: 0px solid #e4efff;
-      background: #e4efff;
-      color: #2d4a70;
-      font-weight: bold;
-      width: 300px;
-      height: 60px;
-      text-align: center;
-    }
-  </style>
-  <body style="background-color: #135CBD">
+  <body>
+    <!-- nav/side -->
     <div
-      class="container justify-content-center centered"
-      style="margin-top: 10px"
+      class="w3-overlay w3-animate-opacity"
+      onclick="w3_close()"
+      style="cursor:pointer;"
+      id="myOverlay"
+    ></div>
+    <nav
+      class=" navbar navbar-expand-lg navbar-dark white"
+      style="z-index: 1025;"
     >
-      <div class="row ">
-        <div class="col-12 col-md-10 mt-10">
-          <a class="h1" style="color: #fff; font-weight: bold;">
-            Wallet
-          </a>
+      <div class="container text-center fa-2x" style="color: #1875F0">
+        <div class="col-3 col-md-3 col-lg-3">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="col-3 col-md-3 col-lg-3">
+          <i class="fas fa-dollar-sign"></i>
+        </div>
+        <div class="col-3 col-md-3 col-lg-3">
+          <i class="far fa-clock"></i>
+        </div>
+        <div class="col-3 col-md-3 col-lg-3">
+          <i class="far fa-user"></i>
         </div>
       </div>
-      <div class="row h4" style="color: #fff; margin-bottom: 30px">
-        <div class="col-12 col-md-10 mt-10  text-left">
-          Login to wallet account
-        </div>
-      </div>
-      <div class="row text-center h5" style="color: #2D4A70">
-        <div class="col-12 col-md-10 mt-10  ">
-          <a href="login.html"><button class="round-btn">Login</button></a>
-        </div>
-      </div>
-      <div class="row text-center h6" style="color: #fff">
-        <div class="col-12 col-md-10 mt-10  ">
-          <a href="register.html">Register</a>
-        </div>
-      </div>
-    </div>
+    </nav>
+
+    <!-- nav/side -->
   </body>
 </html>
 <!-- SCRIPTS -->
