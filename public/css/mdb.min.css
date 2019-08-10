@@ -175,30 +175,48 @@ h6 {
   background-color: rgba(233, 30, 99, 0.7);
 }
 .pink.darken-1 {
-  background-color: #d81b60 !important;
+  background: linear-gradient(
+    180deg,
+    rgb(9, 21, 70) 0%,
+    rgb(0, 51, 153) 100%
+  ) !important;
 }
 .pink.darken-2 {
-  background-color: #c2185b !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 82, 114, 1) 0%,
+    rgba(0, 164, 228, 1) 100%
+  ) !important;
 }
 .pink.darken-3 {
-  background-color: #ad1457 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 44, 43, 1) 0%,
+    rgba(0, 169, 80, 1) 100%
+  ) !important;
 }
 .pink.darken-4 {
   /* background-color: #880e4f !important; */
   background: rgb(255, 205, 104);
   background: linear-gradient(
-    140deg,
-    rgba(255, 205, 104, 1) 0%,
-    rgba(255, 180, 112, 1) 20%,
-    rgba(255, 70, 148, 1) 100%
+    180deg,
+    rgba(44, 18, 81, 1) 0%,
+    rgba(70, 34, 121, 1) 100%
   ) !important;
 }
 .pink.accent-1 {
-  background-color: #ff80ab !important;
+  background: linear-gradient(
+    180deg,
+    rgb(155, 3, 79) 0%,
+    rgba(239, 83, 144, 1) 100%
+  ) !important;
 }
 .pink.accent-2 {
-  background-color: #ff4081 !important;
-}
+  background: linear-gradient(
+    180deg,
+    rgb(44, 37, 37) 0%,
+    rgba(111, 95, 94, 1) 100%
+  ) !important; }
 .pink.accent-3 {
   background-color: #f50057 !important;
 }
@@ -1254,25 +1272,21 @@ ul.stepper li.warning a .circle {
   background-color: #263238 !important;
 }
 .purple-gradient {
-  background: -webkit-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-  background: -o-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-  background: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
-}
+  background: -webkit-linear-gradient(50deg, #093386, #093386) !important;
+  background: -o-linear-gradient(50deg, #093386, #093386) !important;
+  background: linear-gradient(40deg, #093386, #093386) !important; }
 .peach-gradient {
-  background: -webkit-linear-gradient(90deg, #ffcd68, #ff4694) !important;
-  background: -o-linear-gradient(90deg, #ffcd68, #ff4694) !important;
-  background: linear-gradient(90deg, #ffcd68, #ff4694) !important;
-}
+  background: -webkit-linear-gradient(10deg, #7A58BF, #7A58BF) !important;
+  background: -o-linear-gradient(30deg, #7A58BF, #7A58BF) !important;
+  background: linear-gradient(100deg, #7A58BF, #7A58BF) !important; }
 .aqua-gradient {
-  background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-  background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
-}
+  background: -webkit-linear-gradient(50deg, #5CA17D #5CA17D) !important;
+  background: -o-linear-gradient(50deg, #5CA17D, #5CA17D) !important;
+  background: linear-gradient(40deg, #5CA17D, #5CA17D) !important; }
 .blue-gradient {
-  background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: linear-gradient(40deg, #45cafc, #303f9f) !important;
-}
+  background: -webkit-linear-gradient(50deg, #6BD6FF, #6BD6FF) !important;
+  background: -o-linear-gradient(50deg, #6BD6FF, #6BD6FF) !important;
+  background: linear-gradient(40deg, #6BD6FF, #6BD6FF) !important; }
 .purple-gradient-rgba {
   background: -webkit-linear-gradient(
     50deg,
@@ -1291,22 +1305,9 @@ ul.stepper li.warning a .circle {
   ) !important;
 }
 .peach-gradient-rgba {
-  background: -webkit-linear-gradient(
-    50deg,
-    rgba(255, 216, 111, 0.9),
-    rgba(252, 98, 98, 0.9)
-  ) !important;
-  background: -o-linear-gradient(
-    50deg,
-    rgba(255, 216, 111, 0.9),
-    rgba(252, 98, 98, 0.9)
-  ) !important;
-  background: linear-gradient(
-    40deg,
-    rgba(255, 216, 111, 0.9),
-    rgba(252, 98, 98, 0.9)
-  ) !important;
-}
+  background: -webkit-linear-gradient(10deg, #7A58BF, #7A58BF) !important;
+  background: -o-linear-gradient(30deg, #7A58BF, #7A58BF) !important;
+  background: linear-gradient(100deg, #7A58BF, #7A58BF) !important; }
 .aqua-gradient-rgba {
   background: -webkit-linear-gradient(
     50deg,

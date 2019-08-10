@@ -162,22 +162,39 @@
   background-color: rgba(233, 30, 99, 0.7); }
 
 .pink.darken-1 {
-  background-color: #d81b60 !important; }
+  background: linear-gradient(
+    180deg,
+    rgba(32, 44, 43, 1) 0%,
+    rgba(0, 169, 80, 1) 100%
+  ) !important;}
 
 .pink.darken-2 {
   background-color: #c2185b !important; }
 
 .pink.darken-3 {
-  background-color: #ad1457 !important; }
+  background: linear-gradient(
+    180deg,
+    rgba(32, 44, 43, 1) 0%,
+    rgba(0, 169, 80, 1) 100%
+  ) !important;
+}
 
 .pink.darken-4 {
   background-color: #880e4f !important; }
 
 .pink.accent-1 {
-  background-color: #ff80ab !important; }
+  background: linear-gradient(
+    180deg,
+    rgba(32, 44, 43, 1) 0%,
+    rgba(0, 169, 80, 1) 100%
+  ) !important; }
 
-.pink.accent-2 {
-  background-color: #ff4081 !important; }
+.pink.accent-2  {
+  background: linear-gradient(
+    180deg,
+    rgba(32, 44, 43, 1) 0%,
+    rgba(0, 169, 80, 1) 100%
+  ) !important; }
 
 .pink.accent-3 {
   background-color: #f50057 !important; }
@@ -1230,24 +1247,24 @@
   background-color: #263238 !important; }
 
 .purple-gradient {
-  background: -webkit-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-  background: -o-linear-gradient(50deg, #ff6ec4, #7873f5) !important;
-  background: linear-gradient(40deg, #ff6ec4, #7873f5) !important; }
+  background: -webkit-linear-gradient(50deg, #1f61e4, #1f61e4) !important;
+  background: -o-linear-gradient(50deg, #1f61e4, #1f61e4) !important;
+  background: linear-gradient(40deg, #1f61e4, #1f61e4) !important; }
 
 .peach-gradient {
-  background: -webkit-linear-gradient(10deg, #ffcd68, #ff4694) !important;
-  background: -o-linear-gradient(30deg, #ffcd68, #ff4694) !important;
-  background: linear-gradient(100deg, #ffcd68, #ff4694) !important; }
+  background: -webkit-linear-gradient(10deg, #7A58BF, #7A58BF) !important;
+  background: -o-linear-gradient(30deg, #7A58BF, #7A58BF) !important;
+  background: linear-gradient(100deg, #7A58BF, #7A58BF) !important; }
 
 .aqua-gradient {
-  background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-  background: -o-linear-gradient(50deg, #2096ff, #05ffa3) !important;
-  background: linear-gradient(40deg, #2096ff, #05ffa3) !important; }
+  background: -webkit-linear-gradient(50deg, #5CA17D #5CA17D) !important;
+  background: -o-linear-gradient(50deg, #5CA17D, #5CA17D) !important;
+  background: linear-gradient(40deg, #5CA17D, #5CA17D) !important; }
 
 .blue-gradient {
-  background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: linear-gradient(40deg, #45cafc, #303f9f) !important; }
+  background: -webkit-linear-gradient(50deg, #6BD6FF, #6BD6FF) !important;
+  background: -o-linear-gradient(50deg, #6BD6FF, #6BD6FF) !important;
+  background: linear-gradient(40deg, #6BD6FF, #6BD6FF) !important; }
 
 .purple-gradient-rgba {
   background: -webkit-linear-gradient(50deg, rgba(255, 110, 196, 0.9), rgba(120, 115, 245, 0.9)) !important;
@@ -1255,9 +1272,9 @@
   background: linear-gradient(40deg, rgba(255, 110, 196, 0.9), rgba(120, 115, 245, 0.9)) !important; }
 
 .peach-gradient-rgba {
-  background: -webkit-linear-gradient(50deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important;
-  background: -o-linear-gradient(50deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important;
-  background: linear-gradient(40deg, rgba(255, 216, 111, 0.9), rgba(252, 98, 98, 0.9)) !important; }
+  background: -webkit-linear-gradient(10deg, #7A58BF, #7A58BF) !important;
+  background: -o-linear-gradient(30deg, #7A58BF, #7A58BF) !important;
+  background: linear-gradient(100deg, #7A58BF, #7A58BF) !important; }
 
 .aqua-gradient-rgba {
   background: -webkit-linear-gradient(50deg, rgba(32, 150, 255, 0.9), rgba(5, 255, 163, 0.9)) !important;
@@ -1886,7 +1903,7 @@ a.text-light:hover, a.text-light:focus {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); }
+   }
 
 .waves-button,
 .waves-button:hover,
@@ -1937,7 +1954,7 @@ a.text-light:hover, a.text-light:focus {
   border-radius: 50%; }
 
 .waves-float {
-  -webkit-mask-image: none;
+  
   -webkit-box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12);
   -webkit-transition: all 300ms;
