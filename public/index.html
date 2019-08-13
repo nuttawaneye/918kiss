@@ -1,88 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="mobile-web-app-capable" content="no" />
+    <title>Sexy Baccarat | เซ็กซี่บาคาร่า : คาสิโนออนไลน์ บาคาร่าออนไลน์</title>
+    <link rel="icon" href="//aba-gaming.com/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="//aba-gaming.com/favicon.ico"
+      type="image/x-icon"
+    />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=.5, user-scalable=no, target-densitydpi=device-width"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
     <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
-    <title>SCB</title>
+    <link rel="stylesheet" type="text/css" href="//aba-gaming.com/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+      type="b87439fc2f0d0eafb6610931-text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"
+      integrity="sha256-NjqA02fmZY5y2RjNM/lIHOeSkZmphYEisNzGHf+mL94="
+      crossorigin="anonymous"
+      type="b87439fc2f0d0eafb6610931-text/javascript"
+    ></script>
+    <audio
+      id="sound_01"
+      src="//aba-gaming.com/sound/button-11.mp3"
+      autostart="false"
+    ></audio>
+    <audio
+      id="sound_02"
+      src="//aba-gaming.com/sound/button-6.mp3"
+      autostart="false"
+    ></audio>
+    <link
+      href="//fonts.googleapis.com/css?family=Anton|Modak"
+      rel="stylesheet"
+    />
+    <script
+      src="//code.jquery.com/jquery-3.3.1.js"
+      type="b87439fc2f0d0eafb6610931-text/javascript"
+    ></script>
+    <script
+      src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+      type="b87439fc2f0d0eafb6610931-text/javascript"
+    ></script>
   </head>
   <style>
-    .centered {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    html:-webkit-full-screen {
+      float: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      border: 0 none;
+      background-color: #f00;
     }
-    .round-btn {
-      border-radius: 50px;
-      -moz-border-radius: 50px;
-      -webkit-border-radius: 50px;
-      border: 0px solid #e4efff;
-      background: #e4efff;
-      color: #2d4a70;
-      font-weight: bold;
-      width: 300px;
-      height: 60px;
-      text-align: center;
+
+    html:-moz-full-screen {
+      float: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      border: 0 none;
+    }
+
+    html:-ms-full-screen {
+      float: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      border: 0 none;
+    }
+
+    html:-o-full-screen {
+      float: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      border: 0 none;
+    }
+
+    html:full-screen {
+      float: none;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      border: 0 none;
+    }
+    .hidden {
+      display: none;
+    }
+    .show {
+      height: 100vh;
+      width: 100vw;
+      display: block;
     }
   </style>
-  <body style="background-color: #135CBD">
-    <div
-      class="container justify-content-center centered"
-      style="margin-top: 10px"
-    >
-      <div class="row ">
-        <div class="col-12 col-md-10 mt-10">
-          <a class="h1" style="color: #fff; font-weight: bold;">
-            Wallet
-          </a>
+  <body style="margin:0px;height:100%;width:100%;position:relative; ">
+    <div id="game"></div>
+    <div id="isshow" class="hidden" style="color:#FFF;">
+      <br /><br />
+      <center>
+        <h1>กำลังเข้าเกมส์</h1>
+        <br />กรุณารอสักครู่...
+      </center>
+    </div>
+    <div id="container" class="container">
+      <div class="login_body">
+        <div class="logo"></div>
+        <div class="royal_top"></div>
+        <div class="login_panel">
+          <div class="login_panel_inner">
+            <div class="field_user">
+              <div class="field_user_input">
+                <input id="username" maxlength="50" value="" />
+              </div>
+            </div>
+            <div class="field_pw">
+              <div class="field_pw_input">
+                <input id="password" type="password" value="" maxlength="50" />
+              </div>
+            </div>
+            <div
+              class="btn_login"
+              onclick="if (!window.__cfRLUnblockHandlers) return false; login();"
+              data-cf-modified-b87439fc2f0d0eafb6610931-=""
+            ></div>
+          </div>
         </div>
-      </div>
-      <div class="row h4" style="color: #fff; margin-bottom: 30px">
-        <div class="col-12 col-md-10 mt-10  text-left">
-          Login to wallet account
-        </div>
-      </div>
-      <div class="row text-center h5" style="color: #2D4A70">
-        <div class="col-12 col-md-10 mt-10  ">
-          <a href="login.html"><button class="round-btn">Login</button></a>
-        </div>
-      </div>
-      <div class="row text-center h6" style="color: #fff">
-        <div class="col-12 col-md-10 mt-10  ">
-          <a href="register.html">Register</a>
-        </div>
+        <div class="royal_bottom"></div>
+        <div class="txt_footer">sexybaccarat168 Allright Reserved</div>
       </div>
     </div>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
   </body>
 </html>
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
