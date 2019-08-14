@@ -1,0 +1,28 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.enableds.sticky"
+    },
+    "phonegap-plugin-mobile-accessibility": {
+      "PACKAGE_NAME": "com.enableds.sticky"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.enableds.sticky"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.enableds.sticky"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.enableds.sticky"
+    }
+  }
+}

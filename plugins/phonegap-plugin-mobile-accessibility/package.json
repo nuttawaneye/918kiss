@@ -1,0 +1,62 @@
+{
+  "_from": "git+https://github.com/phonegap/phonegap-mobile-accessibility.git",
+  "_id": "phonegap-plugin-mobile-accessibility@1.0.5",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/phonegap-plugin-mobile-accessibility",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/phonegap/phonegap-mobile-accessibility.git",
+    "rawSpec": "https://github.com/phonegap/phonegap-mobile-accessibility.git",
+    "saveSpec": "git+https://github.com/phonegap/phonegap-mobile-accessibility.git",
+    "fetchSpec": "https://github.com/phonegap/phonegap-mobile-accessibility.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/phonegap/phonegap-mobile-accessibility.git#e9821054c38fb203c3fe632bd7bbaa02ca56e544",
+  "_spec": "https://github.com/phonegap/phonegap-mobile-accessibility.git",
+  "_where": "/Users/enabled/apps/Sticky",
+  "author": {
+    "name": "Adobe PhoneGap Team"
+  },
+  "bugs": {
+    "url": "https://github.com/phonegap/phonegap-mobile-accessibility/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "phonegap-plugin-mobile-accessibility",
+    "platforms": [
+      "ios",
+      "android",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "PhoneGap Mobile Accessibility Plugin",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "http://github.com/phonegap/phonegap-mobile-accessibility#readme",
+  "keywords": [
+    "phonegap",
+    "mobile accessibility",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows"
+  ],
+  "license": "Apache 2.0",
+  "name": "phonegap-plugin-mobile-accessibility",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phonegap/phonegap-mobile-accessibility.git"
+  },
+  "version": "1.0.5"
+}

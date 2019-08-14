@@ -8,6 +8,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/framework.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,6 +42,9 @@
     }
     .bg-btn {
       background: transparent url("img/btn1.jpg") no-repeat;
+    }
+    .card {
+      border-radius: 1rem !important;
     }
   </style>
   <!-- nav/side -->
@@ -93,18 +99,27 @@
               </div>
             </a>
           </div>
-
-          <div class="list-group ">
-            <a
-              href="#!"
-              class="list-group-item list-group-item-action flex-column align-items-start mt-4"
-            >
-              <div class="d-flex w-100 justify-content-between mt-5 mb-5 ">
-                <h5 class="mb-2 h2">Download</h5>
-              </div>
-            </a>
-          </div>
         </div>
+      </div>
+      <div
+        data-height="130"
+        class="caption caption-margins round-medium shadow-huge"
+      >
+        <div class="caption-center right-15 top-15 text-right">
+          <a
+            href="#"
+            class="back-button button button-xs button-round-huge bg-highlight"
+            >Back Home</a
+          >
+        </div>
+        <div class="caption-center left-15 text-left">
+          <h1 class="color-white bolder">Gallery Wide 2</h1>
+          <p class="under-heading color-white opacity-90 bottom-0">
+            Center Captions with Sub-Caption
+          </p>
+        </div>
+        <div class="caption-overlay bg-black opacity-70"></div>
+        <div class="caption-bg bg-18"></div>
       </div>
     </div>
   </body>
@@ -119,3 +134,6 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>

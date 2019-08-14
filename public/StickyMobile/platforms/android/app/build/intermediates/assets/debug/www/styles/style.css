@@ -1,0 +1,11 @@
+.nav-logo{background-size:28px 28px; height:45px;}
+.header-logo{background-size:28px 28px; width:50px;}
+.footer .footer-logo{background-size:80px 80px;	height:80px!important; margin-bottom:20px!important;}
+
+.theme-light .header .header-logo{background-image:url(../images/preload-logo.png);}
+.theme-light .menu .nav-logo{background-image:url(../images/preload-logo.png);}
+.theme-light .footer .footer-logo{background-image:url(../images/preload-logo.png);}
+
+.theme-dark .header .header-logo{background-image:url(../images/preload-logo.png);}
+.theme-dark .menu .nav-logo{background-image:url(../images/preload-logo.png);}
+.theme-dark .footer .footer-logo{background-image:url(../images/preload-logo.png);}

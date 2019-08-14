@@ -1,0 +1,5 @@
+{
+    "SystemConfiguration.framework": 1,
+    "CoreTelephony.framework": 1,
+    "MediaAccessibility.framework": 1
+}
