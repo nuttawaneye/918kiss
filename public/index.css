@@ -1,0 +1,64 @@
+/* @import url("../font/SukhumvitSet.ttc"); */
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/Mitr-Light.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  font-family: myFirstFont !important;
+  /* font-size: 62.5% !important; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: myFirstFont !important;
+}
+h2 {
+  font-family: myFirstFont !important;
+}
+h3 {
+  font-family: myFirstFont !important;
+}
+h4 {
+  font-family: myFirstFont !important;
+}
+h5 {
+  font-family: myFirstFont !important;
+}
+h6 {
+  font-family: myFirstFont !important;
+}
+p {
+  font-family: myFirstFont !important;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+.modal-footer {
+  border-top: none !important;
+}
+.btn-secondary {
+  background-color: #7a58bf !important;
+}
+.card .card-body .card-text {
+  color: #212121 !important;
+}
+/* card */
+.card {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+/* nav */
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
