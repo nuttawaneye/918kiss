@@ -40,7 +40,7 @@ h1 {
 }
 .login-box input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .login-box input[type="text"],
 input[type="password"] {

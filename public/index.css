@@ -150,10 +150,10 @@ p {
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     display: inline-block;
-    top: 10px;
+    top: 9px;
     position: absolute;
-    left: calc(50% - 75px);
-    width: 150px;
+    left: calc(50% - 67px);
+    width: 135px;
     z-index: 5000;
     overflow: hidden;
   }
@@ -189,10 +189,10 @@ p {
 @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     display: inline-block;
-    top: 60px !important;
+    top: 53px !important;
     position: absolute;
-    left: calc(50% - 75px);
-    width: 150px;
+    left: calc(50% - 70px);
+    width: 140px;
     z-index: 5000;
     overflow: hidden;
   }
@@ -205,10 +205,10 @@ p {
 @media (min-device-height: 375px) and (min-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     display: inline-block;
-    top: 13px !important;
+    top: 9px !important;
     position: absolute;
-    left: calc(50% - 73px);
-    width: 136px;
+    left: calc(50% - 70px);
+    width: 129px;
     z-index: 5000;
     overflow: hidden;
   }
@@ -228,10 +228,10 @@ p {
 @media (device-height: 731px) and (device-width: 411px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     display: inline-block;
-    top: 88px !important;
+    top: 78px !important;
     position: absolute;
-    left: calc(50% - 72px);
-    width: 144px;
+    left: calc(50% - 70px);
+    width: 140px;
     z-index: 5000;
     overflow: hidden;
   }
@@ -244,10 +244,10 @@ p {
 @media (device-height: 411px) and (device-width: 731px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     display: inline-block;
-    top: 19px !important;
+    top: 17px !important;
     position: absolute;
-    left: calc(50% - 72px);
-    width: 144px;
+    left: calc(50% - 70px);
+    width: 134px;
     z-index: 5000;
     overflow: hidden;
   }
