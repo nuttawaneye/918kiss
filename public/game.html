@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <style>
+    @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+    figure.snip1154 {
+      position: relative;
+      overflow: hidden;
+      margin: 10px;
+      min-width: 220px;
+      max-width: 310px;
+      max-height: 310px;
+      width: 100%;
+      background: #1a1a1a;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(41, 41, 41, 0.795);
+    }
+    figure.snip1154 * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    figure.snip1154 img {
+      max-width: 100%;
+    }
+    figure.snip1154 div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 65px;
+      height: 65px;
+      opacity: 0;
+      box-shadow: 0 0 30px #000;
+    }
+    figure.snip1154 div:before,
+    figure.snip1154 div:after {
+      content: "";
+      width: 65px;
+      height: 65px;
+      border: 1px solid rgb(255, 238, 3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transform: rotate(45deg) translate(0px, 0px);
+      transform: rotate(45deg) translate(0px, 0px);
+      -webkit-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+    }
+    figure.snip1154 i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 28px;
+      color: #ffe600;
+      width: 65px;
+      height: 65px;
+      line-height: 65px;
+    }
+    figure.snip1154 a {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+    }
+    figure.snip1154:hover img,
+    figure.snip1154.hover img {
+      opacity: 0.3;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+    figure.snip1154:hover div,
+    figure.snip1154.hover div {
+      opacity: 1;
+    }
+    figure.snip1154:hover div:after,
+    figure.snip1154.hover div:after,
+    figure.snip1154:hover div:before,
+    figure.snip1154.hover div:before {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s;
+    }
+    figure.snip1154:hover div:before,
+    figure.snip1154.hover div:before {
+      -webkit-transform: rotate(45deg) translate(-7px, 7px);
+      transform: rotate(45deg) translate(-7px, 7px);
+    }
+    figure.snip1154:hover div:after,
+    figure.snip1154.hover div:after {
+      -webkit-transform: rotate(45deg) translate(7px, -7px);
+      transform: rotate(45deg) translate(7px, -7px);
+    }
+
+    /* Demo purposes only */
+    html {
+      height: 100%;
+    }
+    body {
+      background-color: #181818;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap;
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <figure class="snip1154">
+      <img src="img/game/african.png" alt="sq-sample14" />
+      <div><i class="fas fa-gamepad"></i></div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1154">
+      <img src="img/game/african.png" alt="sq-sample14" />
+      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1154">
+      <img src="img/game/african.png" alt="sq-sample14" />
+      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1154">
+      <img src="img/game/african.png" alt="sq-sample14" />
+      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1154">
+      <img src="img/game/african.png" alt="sq-sample14" />
+      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
+      <a href="#"></a>
+    </figure>
+  </body>
+</html>
+<script>
+  /* Demo purposes only */
+  $(".hover").mouseleave(function() {
+    $(this).removeClass("hover");
+  });
+</script>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>

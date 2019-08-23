@@ -1235,9 +1235,9 @@
   background: linear-gradient(40deg, #ff6ec4, #7873f5) !important; }
 
 .peach-gradient {
-  background: -webkit-linear-gradient(50deg, #ffcd68, #ff4694) !important;
-  background: -o-linear-gradient(50deg, #ffcd68, #ff4694) !important;
-  background: linear-gradient(40deg, #ffcd68, #ff4694) !important; }
+  background: -webkit-linear-gradient(50deg, #FFD86F, #FC6262) !important;
+  background: -o-linear-gradient(50deg, #FFD86F, #FC6262) !important;
+  background: linear-gradient(40deg, #FFD86F, #FC6262) !important; }
 
 .aqua-gradient {
   background: -webkit-linear-gradient(50deg, #2096ff, #05ffa3) !important;
