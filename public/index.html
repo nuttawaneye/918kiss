@@ -1,267 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    <title>Game</title>
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Mitr&display=swap");
-    .centered {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    body {
-      background-color: rgb(14, 14, 14);
-      color: #ffffff;
-      font-family: "Mitr", sans-serif !important;
-    }
-    .card {
-      background: rgb(49, 49, 49) !important;
-      background: radial-gradient(
-        circle,
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet" />
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href=".js/style.js">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+  <title>Game</title>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Mitr&display=swap");
+
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  body {
+    /* background-image: url(img/bg2.png); */
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+    font-family: "Mitr", sans-serif !important;
+  }
+
+  .card {
+    background: rgb(49, 49, 49) !important;
+    background: radial-gradient(circle,
         rgb(32, 32, 32) 0%,
-        rgb(0, 0, 0) 80%
-      ) !important;
-    }
-    .myButton {
-      -moz-box-shadow: inset 0px 1px 0px 0px #c6ecff;
-      -webkit-box-shadow: inset 0px 1px 0px 0px #c6ecff;
-      box-shadow: inset 0px 1px 0px 0px #c6ecff;
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.05, #44baff),
-        color-stop(1, #12c3f0)
-      );
-      background: -moz-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: -webkit-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: -o-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: -ms-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: linear-gradient(to bottom, #44baff 5%, #12c3f0 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(s tartColorstr='#12c3f0', endColorstr='#44baff',GradientType=0);
-      background-color: #44baff;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-      border: 1px solid #44baff;
-      display: inline-block;
-      cursor: pointer;
-      color: #ffffff;
-      font-family: Arial;
-      font-size: 15px;
-      font-weight: bold;
-      padding: 6px 24px;
-      text-decoration: none;
-      text-shadow: 0px 1px 0px #356bb2;
-    }
-    .myButton:hover {
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.05, #44baff),
-        color-stop(1, #12c3f0)
-      );
-      background: -moz-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: -webkit-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: -o-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: -ms-linear-gradient(top, #44baff 5%, #12c3f0 100%);
-      background: linear-gradient(to bottom, #44baff 5%, #12c3f0 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#12c3f0', endColorstr='#12c3f0',GradientType=0);
-      background-color: #44baff;
-    }
-    .myButton:active {
-      position: relative;
-      top: 1px;
-    }
-    h3 {
-      color: #ffffff !important;
-    }
-    .card-body {
-      border-radius: 9rem !important;
-    }
-    .card {
-      padding: 3% !important;
-    }
-    .btn {
-      border-radius: 1rem;
-      background-color: #94271f;
-      width: 100%;
-    }
-  </style>
-  <body>
-    <div class="container mt-5">
-      <div class="row mb-3">
-        <div class="col-12">
-          <form class="form-inline md-form form-sm mt-0 justify-content-center">
-            <i class="fas fa-search" aria-hidden="true"></i>
-            <input
-              class="form-control form-control-sm ml-3"
-              style="width: 80%;"
-              type="text"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
+        rgb(0, 0, 0) 80%) !important;
+    padding: 3% !important;
+    border-radius: 0.5rem !important;
+  }
+
+  h3 {
+    color: #ffffff !important;
+  }
+
+  .card-body {
+    border-radius: 15rem !important;
+  }
+
+
+  .btn {
+    border-radius: 1rem;
+    background-color: #94271f;
+    width: 100%;
+    height: 80%;
+  }
+
+  /* hover */
+  .example_a {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+  }
+
+  .example_a:hover {
+    background: #181818;
+    border-radius: 0.5rem !important;
+    border: 0.05rem solid #ed3330;
+    letter-spacing: 3px;
+    -webkit-box-shadow: 10px 10px 80px -10px rgba(255, 0, 0, 0.57);
+    -moz-box-shadow: 10px 10px 80px -10px rgba(255, 0, 0, 0.733);
+    box-shadow: 10px 80px -20px rgba(255, 0, 0, 0.705);
+    transition: all 0.4s ease 0s;
+  }
+
+  /* ribbon */
+  .ribbon {
+    position: absolute;
+    display: block;
+    top: -4px;
+    right: -4px;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+  }
+
+  .ribbon .label {
+    position: relative;
+    display: block;
+    left: -12px;
+    top: 23px;
+    width: 160px;
+    padding: 10px 0;
+    font-family: Sans-Serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(142, 159, 64);
+
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+  }
+
+  .ribbon .label:before,
+  .ribbon .label:after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    border-top: 4px solid #3C7568;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+
+  }
+
+  .ribbon .label:before {
+    left: 0;
+  }
+
+  .ribbon .label:after {
+    right: 0;
+  }
+
+  /* slide */
+</style>
+
+<body>
+  <div class="container mt-4">
+    <div class="row mb-3">
+      <div class="col-12">
+        <form class="form-inline md-form form-sm mt-0 justify-content-center">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input class="form-control form-control-sm ml-3" style="width: 80%;" type="text" placeholder="Search"
+            aria-label="Search" />
+        </form>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3 mb-5">
+      <div class="col-12 col-md-4 col-lg-4">
+        <button class="btn">
+          <a><i class="fas fa-thumbs-up fa-3x"></i>
+            <h4>แนะนำ</h4>
+          </a>
+        </button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <button class="btn">
+          <a><i class="fab fa-hotjar fa-3x"></i>
+            <h4>ยอดนิยม</h4>
+          </a>
+        </button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <button class="btn">
+          <a><i class="fas fa-dice fa-3x"></i>
+            <h4>เกมทั้งหมด</h4>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+
+        <div class="view overlay">
+          <div class="card">
+            <div class="ribbon">
+              <div class="label">New !</div>
+            </div>
+            <div class="card-body">
+
+              <p class="h4"> Safari Life</p>
+
+              <img src="img/game/african.png" class="img-fluid " alt="smaple image" width="100%">
+              <div class="mask flex-center rgba-black-strong">
+                <div class="button_cont"><a class="example_a" href="add-website-here" target="_blank"
+                    rel="nofollow noopener">
+                    <i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-center mt-3 mb-5">
-        <div class="col-12 col-md-4 col-lg-4">
-          <button class="btn">
-            <a
-              ><i class="fas fa-thumbs-up fa-3x"></i>
-              <h4>แนะนำ</h4></a
-            >
-          </button>
-        </div>
-        <div class="col-12 col-md-4 col-lg-4">
-          <button class="btn">
-            <a
-              ><i class="fab fa-hotjar fa-3x"></i>
-              <h4>ยอดนิยม</h4></a
-            >
-          </button>
-        </div>
-        <div class="col-12 col-md-4 col-lg-4">
-          <button class="btn">
-            <a
-              ><i class="fas fa-dice fa-3x"></i>
-              <h4>เกมทั้งหมด</h4></a
-            >
-          </button>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+
+          <div class="card-body">
+            <p class="h5">
+              Safari Life
+            </p>
+            <img src="img/game/african.png" alt="" width="100%" />
+          </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Safari Life
-              </p>
-              <img src="img/game/african.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Aladdin
+            </p>
+            <img src="img/game/aladdin.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Aladdin
-              </p>
-              <img src="img/game/aladdin.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Ancientartifact
+            </p>
+            <img src="img/game/ancientartifactgw.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Ancientartifact
-              </p>
-              <img src="img/game/ancientartifactgw.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Ancientegypt
+            </p>
+            <img src="img/game/ancientegypt.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Ancientegypt
-              </p>
-              <img src="img/game/ancientegypt.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Archer
+            </p>
+            <img src="img/game/archer.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Archer
-              </p>
-              <img src="img/game/archer.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Azteca
+            </p>
+            <img src="img/game/azteca.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Azteca
-              </p>
-              <img src="img/game/azteca.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Baccarat
+            </p>
+            <img src="img/game/baccarat.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Baccarat
-              </p>
-              <img src="img/game/baccarat.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Beanstalk
+            </p>
+            <img src="img/game/beanstalk.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-3 mt-2">
-          <div class="card">
-            <div class="card-body">
-              <p class="h5">
-                Beanstalk
-              </p>
-              <img src="img/game/beanstalk.png" alt="" width="100%" />
-            </div>
-            <a href="" class="myButton" style="margin: 1%"
-              ><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a
-            >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="test-case-wrap slick-5-1">
+          <h2>5/1</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
 <!-- SCRIPTS -->
 <!-- JQuery -->

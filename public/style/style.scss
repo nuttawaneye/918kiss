@@ -1,0 +1,37 @@
+//Vars
+$c1: #3a8999;
+$c2: #e84a69;
+
+//General
+html,body{background: #102131; color: white;}
+.container{padding: 30px;}
+.test-case-wrap{margin-bottom: 60px;}
+
+//Corrects display none issues with bootstrap tabs
+.tab-content>.tab-pane {display: block;visibility: hidden;}
+.tab-content>.tab-pane.active {visibility: visible;}
+.tab-content{position: relative;}
+.tab-pane{position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
+.nav-tabs>li>a{background: rgba(255,255,255,.65);color: #333;}
+
+
+//General Slick Styles
+.slick-slider{
+  background: $c1;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  color:white;
+  
+  .slick-dots button:before,
+  .slick-dots .slick-active button:before{color: rgba(255,255,255,.85)}
+  
+  .slick-slide{
+    background: $c1;
+    padding: 40px 0;
+    &:nth-child(odd) {background: $c2;}
+    &.slick-active{background: rebeccapurple;}
+  }
+  
+}
+

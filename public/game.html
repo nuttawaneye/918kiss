@@ -1,169 +1,346 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <style>
-    @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-    figure.snip1154 {
-      position: relative;
-      overflow: hidden;
-      margin: 10px;
-      min-width: 220px;
-      max-width: 310px;
-      max-height: 310px;
-      width: 100%;
-      background: #1a1a1a;
-      text-align: center;
-      box-shadow: 0 0 5px rgba(41, 41, 41, 0.795);
-    }
-    figure.snip1154 * {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-transition: all 0.35s ease-in-out;
-      transition: all 0.35s ease-in-out;
-    }
-    figure.snip1154 img {
-      max-width: 100%;
-    }
-    figure.snip1154 div {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      display: block;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 65px;
-      height: 65px;
-      opacity: 0;
-      box-shadow: 0 0 30px #000;
-    }
-    figure.snip1154 div:before,
-    figure.snip1154 div:after {
-      content: "";
-      width: 65px;
-      height: 65px;
-      border: 1px solid rgb(255, 238, 3);
-      position: absolute;
-      top: 0;
-      left: 0;
-      -webkit-transform: rotate(45deg) translate(0px, 0px);
-      transform: rotate(45deg) translate(0px, 0px);
-      -webkit-transition: all 0.35s ease-in-out;
-      transition: all 0.35s ease-in-out;
-    }
-    figure.snip1154 i {
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-size: 28px;
-      color: #ffe600;
-      width: 65px;
-      height: 65px;
-      line-height: 65px;
-    }
-    figure.snip1154 a {
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      position: absolute;
-    }
-    figure.snip1154:hover img,
-    figure.snip1154.hover img {
-      opacity: 0.3;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-    }
-    figure.snip1154:hover div,
-    figure.snip1154.hover div {
-      opacity: 1;
-    }
-    figure.snip1154:hover div:after,
-    figure.snip1154.hover div:after,
-    figure.snip1154:hover div:before,
-    figure.snip1154.hover div:before {
-      -webkit-transition-delay: 0.1s;
-      transition-delay: 0.1s;
-    }
-    figure.snip1154:hover div:before,
-    figure.snip1154.hover div:before {
-      -webkit-transform: rotate(45deg) translate(-7px, 7px);
-      transform: rotate(45deg) translate(-7px, 7px);
-    }
-    figure.snip1154:hover div:after,
-    figure.snip1154.hover div:after {
-      -webkit-transform: rotate(45deg) translate(7px, -7px);
-      transform: rotate(45deg) translate(7px, -7px);
-    }
+<link rel="stylesheet" href=".style/style.css">
+<h1 class="text-center" style="font-size:60px;">Slick Tests</h1>
 
-    /* Demo purposes only */
-    html {
-      height: 100%;
-    }
-    body {
-      background-color: #181818;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: wrap;
-      margin: 0;
-      height: 100%;
-    }
-  </style>
-  <body>
-    <figure class="snip1154">
-      <img src="img/game/african.png" alt="sq-sample14" />
-      <div><i class="fas fa-gamepad"></i></div>
-      <a href="#"></a>
-    </figure>
-    <figure class="snip1154">
-      <img src="img/game/african.png" alt="sq-sample14" />
-      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
-      <a href="#"></a>
-    </figure>
-    <figure class="snip1154">
-      <img src="img/game/african.png" alt="sq-sample14" />
-      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
-      <a href="#"></a>
-    </figure>
-    <figure class="snip1154">
-      <img src="img/game/african.png" alt="sq-sample14" />
-      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
-      <a href="#"></a>
-    </figure>
-    <figure class="snip1154">
-      <img src="img/game/african.png" alt="sq-sample14" />
-      <div><i class="fas fa-gamepad"></i>เข้าเกม</div>
-      <a href="#"></a>
-    </figure>
-  </body>
-</html>
+<div class="container">
+
+  <div class="tabs-wrap">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Basic</a></li>
+      <li role="presentation"><a href="#slide-scroll" aria-controls="slide-scroll" role="tab" data-toggle="tab">Slide/Scroll Combos</a></li>
+      <li role="presentation"><a href="#special" aria-controls="special" role="tab" data-toggle="tab">Special</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="basic">
+        <h1>Basic Examples</h1>
+        <div class="test-case-wrap responsive-slick">
+          <h2>Responsive Slick</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+
+        <div class="test-case-wrap vertical-mode">
+          <h2>Vertical: True</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+
+        <div class="test-case-wrap center-mode">
+          <h2>CenterMode: True</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+
+        <div class="test-case-wrap variable-width-mode">
+          <h2>VariableWidth: True</h2>
+          <div class="slider">
+            <div>Lorem ipsum voluptates porro quasi.</div>
+            <div>amet nobis.</div>
+            <div>dolor sit amet, consectetur adipisicing elit.</div>
+            <div>Et veniam, dolores ex itaque</div>
+            <div>Rerum repellendus, neque, soluta</div>
+            <div>asperiores.</div>
+          </div>
+        </div>
+
+        <div class="test-case-wrap lazyload-mode">
+          <h2>LazyLoad: onDemand</h2>
+          <div class="slider">
+            <div><img class="img-responsive" src="http://fillmurray.com/400/400" alt="" /></div>
+            <div><img class="img-responsive" src="http://fillmurray.com/g/400/400" alt="" /></div>
+            <div><img class="img-responsive" src="http://placecage.com/400/400" alt="" /></div>
+            <div><img class="img-responsive" src="http://placecage.com/g/400/400" alt="" /></div>
+            <div><img class="img-responsive" src="http://fillmurray.com/400/400" alt="" /></div>
+            <div><img class="img-responsive" src="http://fillmurray.com/g/400/400" alt="" /></div>
+            <div><img class="img-responsive" src="http://placecage.com/c/400/400" alt="" /></div>
+          </div>
+        </div>
+
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="slide-scroll">
+        <h1>SlidesToShow/SlidesToScroll</h1>
+        
+        <div class="test-case-wrap slick-1-2">
+          <h2>1/2</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+        
+        <div class="test-case-wrap slick-1-3">
+          <h2>1/3</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+            
+        <div class="test-case-wrap slick-2-2">
+          <h2>2/2</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+        
+        <div class="test-case-wrap slick-2-3">
+          <h2>2/3</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+        
+        <div class="test-case-wrap slick-2-4">
+          <h2>2/4</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+        
+        <div class="test-case-wrap slick-5-1">
+          <h2>5/1</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+          </div>
+        </div>
+        
+        <div class="test-case-wrap slick-9-1">
+          <h2>9/1</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+            <div>Slide 7</div>
+            <div>Slide 8</div>
+            <div>Slide 9</div>
+            <div>Slide 10</div>
+          </div>
+        </div>
+        
+        <div class="test-case-wrap slick-9-2">
+          <h2>9/2</h2>
+          <div class="slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+            <div>Slide 7</div>
+            <div>Slide 8</div>
+            <div>Slide 9</div>
+            <div>Slide 10</div>
+          </div>
+        </div>
+        
+      </div>
+      <div role="tabpanel" class="tab-pane" id="special">
+
+        <div class="test-case-wrap centerMode-asNavFor">
+          <h2>CenterMode: True & AsNavFor</h2>
+          <div class="slider thumbs">
+            <div class="slide">Slide 1</div>
+            <div class="slide">Slide 2</div>
+            <div class="slide">Slide 3</div>
+            <div class="slide">Slide 4</div>
+            <div class="slide">Slide 5</div>
+            <div class="slide">Slide 6</div>
+            <div class="slide">Slide 7</div>
+            <div class="slide">Slide 8</div>
+            <div class="slide">Slide 9</div>
+          </div>
+
+          <div class="slider text">
+            <div class="slide">Slide 1</div>
+            <div class="slide">Slide 2</div>
+            <div class="slide">Slide 3</div>
+            <div class="slide">Slide 4</div>
+            <div class="slide">Slide 5</div>
+            <div class="slide">Slide 6</div>
+            <div class="slide">Slide 7</div>
+            <div class="slide">Slide 8</div>
+            <div class="slide">Slide 9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
 <script>
-  $(".hover").mouseleave(function() {
-    $(this).removeClass("hover");
-  });
+  //BASIC
+//////////////////
+
+//RESPONSIVE SLICK
+$('.responsive-slick .slider').slick({
+  dots: true,
+  responsive: [{
+    breakpoint: 500,
+    settings: {
+      dots: false,
+      arrows: false,
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  }]
+});
+
+//VERTICAL MODE
+$('.vertical-mode .slider').slick({
+  dots: true,
+  slidesToShow: 3,
+  vertical: true,
+});
+
+//CENTER MODE
+$('.center-mode .slider').slick({
+  dots: true,
+  slidesToShow: 3,
+  centerMode: true,
+});
+
+//VARIBALE WIDTH MODE
+$('.variable-width-mode .slider').slick({
+  dots: true,
+  slidesToShow: 3,
+  variableWidth: true,
+});
+
+//LAZYLOAD ON DEMAND MODE
+$('.lazyload-mode .slider').slick({
+  dots: true,
+  slidesToShow: 3,
+  lazyLoad: 'onDemand',
+});
+
+//SLIDE/SCROLL
+//////////////////
+$('.slick-1-2 .slider').slick({
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 2,
+});
+
+$('.slick-1-3 .slider').slick({
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 3,
+});
+
+$('.slick-2-2 .slider').slick({
+  dots: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+});
+
+$('.slick-2-3 .slider').slick({
+  dots: true,
+  slidesToShow: 2,
+  slidesToScroll: 3,
+});
+
+$('.slick-2-4 .slider').slick({
+  dots: true,
+  slidesToShow: 2,
+  slidesToScroll: 4,
+});
+
+$('.slick-5-1 .slider').slick({
+  dots: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+});
+
+$('.slick-9-1 .slider').slick({
+  dots: true,
+  slidesToShow: 9,
+  slidesToScroll: 1,
+});
+
+$('.slick-9-2 .slider').slick({
+  dots: true,
+  slidesToShow: 9,
+  slidesToScroll: 2,
+});
+
+//SPECIAL
+//////////////////
+
+//CENTER MODE AND AS NAV FOR
+$(".centerMode-asNavFor .slider.thumbs").slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.centerMode-asNavFor .slider.text',
+  dots: false,
+  arrows: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+$(".centerMode-asNavFor .slider.text").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.centerMode-asNavFor .slider.thumbs'
+});
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+  $(e.target).find('.slider').each(function() {
+    $(this).slick('setPosition');
+  })
+})
 </script>
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>

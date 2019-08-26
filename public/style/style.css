@@ -1,0 +1,65 @@
+html, body {
+  background: #102131;
+  color: white;
+}
+
+.container {
+  padding: 30px;
+}
+
+.test-case-wrap {
+  margin-bottom: 60px;
+}
+
+.tab-content > .tab-pane {
+  display: block;
+  visibility: hidden;
+}
+
+.tab-content > .tab-pane.active {
+  visibility: visible;
+}
+
+.tab-content {
+  position: relative;
+}
+
+.tab-pane {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-tabs > li > a {
+  background: rgba(255, 255, 255, 0.65);
+  color: #333;
+}
+
+.slick-slider {
+  background: #3a8999;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  color: white;
+}
+
+.slick-slider .slick-dots button:before,
+.slick-slider .slick-dots .slick-active button:before {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.slick-slider .slick-slide {
+  background: #3a8999;
+  padding: 40px 0;
+}
+
+.slick-slider .slick-slide:nth-child(odd) {
+  background: #e84a69;
+}
+
+.slick-slider .slick-slide.slick-active {
+  background: rebeccapurple;
+}
+/*# sourceMappingURL=style.css.map */
