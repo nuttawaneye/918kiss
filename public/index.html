@@ -2,10 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Check</title>
+  <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -14,49 +32,67 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <!--===============================================================================================-->
+
 </head>
 <style>
-  body,
-  html {
-    height: 100%;
-  }
+  @import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 
-  .bg {
-    /* The image used */
-    background-image: url(img/bg6.png);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  body {
+    font-family: 'Kanit', sans-serif;
   }
 </style>
 
-<body class="bg">
+<body>
+  <div class="container">
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100 p-t-50 p-b-90">
+          <form class="login100-form validate-form flex-sb flex-w">
+            <span class="login100-form-title p-b-51">
+                <i class="fas fa-user"></i>
+              Login
+            </span>
+            <div class="wrap-input100  m-b-16">
+              <input class="input100" type="text" name="username" placeholder="Username">
+              <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100  m-b-16">
+              <input class="input100" type="password" name="pass" placeholder="Password">
+              <span class="focus-input100"></span>
+            </div>
+            <div class="container-login100-form-btn m-t-17">
+              <button class="login100-form-btn">
+                Login
+              </button>
+            </div>
 
-  <!-- Start your project here-->
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
-      <!-- Card -->
-      <div class="card">
-        <!-- Card content -->
-        <div class="card-body text-center p-5">
-          <!-- Title -->
-          <i class="fas fa-times-circle red-text fa-4x mb-3"></i>
-          <h2 class="card-title"><a>ไม่พบข้อมูลในระบบ</a></h2>
-
+          </form>
         </div>
-
       </div>
-      <!-- Card -->
     </div>
   </div>
-  <!-- Start your project here-->
+  <div id="dropDownSelect1"></div>
 
-  <!-- SCRIPTS -->
+</body>
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
+<!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -65,6 +101,7 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-</body>
+
+
 
 </html>
