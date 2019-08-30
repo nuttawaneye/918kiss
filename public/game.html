@@ -1,147 +1,299 @@
-<link rel="stylesheet" href=".style/style.css">
-<h1 class="text-center" style="font-size:60px;">Slick Tests</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet" />
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href=".js/style.js">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-  <div class="tabs-wrap">
+  <title>Game</title>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Mitr&display=swap");
 
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Basic</a></li>
-      <li role="presentation"><a href="#slide-scroll" aria-controls="slide-scroll" role="tab" data-toggle="tab">Slide/Scroll Combos</a></li>
-      <li role="presentation"><a href="#special" aria-controls="special" role="tab" data-toggle="tab">Special</a></li>
-    </ul>
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="basic">
-        <h1>Basic Examples</h1>
-        <div class="test-case-wrap responsive-slick">
-          <h2>Responsive Slick</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
-          </div>
-        </div>
+  body {
+    /* background-image: url(img/bg2.png); */
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+    font-family: "Mitr", sans-serif !important;
+  }
 
-        <div class="test-case-wrap vertical-mode">
-          <h2>Vertical: True</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
-          </div>
-        </div>
+  .card {
+    background: rgb(49, 49, 49) !important;
+    background: radial-gradient(circle,
+        rgb(32, 32, 32) 0%,
+        rgb(0, 0, 0) 80%) !important;
+    padding: 3% !important;
+    border-radius: 0.5rem !important;
+  }
 
-        <div class="test-case-wrap center-mode">
-          <h2>CenterMode: True</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
-          </div>
-        </div>
+  h3 {
+    color: #ffffff !important;
+  }
 
-        <div class="test-case-wrap variable-width-mode">
-          <h2>VariableWidth: True</h2>
-          <div class="slider">
-            <div>Lorem ipsum voluptates porro quasi.</div>
-            <div>amet nobis.</div>
-            <div>dolor sit amet, consectetur adipisicing elit.</div>
-            <div>Et veniam, dolores ex itaque</div>
-            <div>Rerum repellendus, neque, soluta</div>
-            <div>asperiores.</div>
-          </div>
-        </div>
-
-        <div class="test-case-wrap lazyload-mode">
-          <h2>LazyLoad: onDemand</h2>
-          <div class="slider">
-            <div><img class="img-responsive" src="http://fillmurray.com/400/400" alt="" /></div>
-            <div><img class="img-responsive" src="http://fillmurray.com/g/400/400" alt="" /></div>
-            <div><img class="img-responsive" src="http://placecage.com/400/400" alt="" /></div>
-            <div><img class="img-responsive" src="http://placecage.com/g/400/400" alt="" /></div>
-            <div><img class="img-responsive" src="http://fillmurray.com/400/400" alt="" /></div>
-            <div><img class="img-responsive" src="http://fillmurray.com/g/400/400" alt="" /></div>
-            <div><img class="img-responsive" src="http://placecage.com/c/400/400" alt="" /></div>
-          </div>
-        </div>
+  .card-body {
+    border-radius: 15rem !important;
+  }
 
 
+  .btn {
+    border-radius: 1rem;
+    background-color: #94271f;
+    width: 100%;
+    height: 80%;
+  }
+
+  /* hover */
+  .example_a {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+  }
+
+  .example_a:hover {
+    background: #181818;
+    border-radius: 0.5rem !important;
+    border: 0.05rem solid #ed3330;
+    letter-spacing: 3px;
+    -webkit-box-shadow: 10px 10px 80px -10px rgba(255, 0, 0, 0.57);
+    -moz-box-shadow: 10px 10px 80px -10px rgba(255, 0, 0, 0.733);
+    box-shadow: 10px 80px -20px rgba(255, 0, 0, 0.705);
+    transition: all 0.4s ease 0s;
+  }
+
+  /* ribbon */
+  .ribbon {
+    position: absolute;
+    display: block;
+    top: -4px;
+    right: -4px;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+  }
+
+  .ribbon .label {
+    position: relative;
+    display: block;
+    left: 6px;
+    top: 4px;
+    width: 160px;
+    padding: 11px 0;
+    font-family: Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: rgb(5, 2, 2);
+    background: linear-gradient(90deg, rgb(47, 0, 0) 16%, rgba(217, 26, 26, 1) 100%);
+
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+  }
+
+  .ribbon .label:before,
+  .ribbon .label:after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    border-top: 4px solid #3C7568;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+
+  }
+
+  .ribbon .label:before {
+    left: 0;
+  }
+
+  .ribbon .label:after {
+    right: 0;
+  }
+
+  /* slide */
+</style>
+
+<body>
+  <div class="container mt-4">
+    <div class="row mb-3">
+      <div class="col-12">
+        <form class="form-inline md-form form-sm mt-0 justify-content-center">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input class="form-control form-control-sm ml-3" style="width: 80%;" type="text" placeholder="Search"
+            aria-label="Search" />
+        </form>
       </div>
-      <div role="tabpanel" class="tab-pane" id="slide-scroll">
-        <h1>SlidesToShow/SlidesToScroll</h1>
-        
-        <div class="test-case-wrap slick-1-2">
-          <h2>1/2</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
+    </div>
+    <div class="row justify-content-center mt-3 mb-5">
+      <div class="col-12 col-md-4 col-lg-4">
+        <button class="btn">
+          <a><i class="fas fa-thumbs-up fa-3x"></i>
+            <h4>แนะนำ</h4>
+          </a>
+        </button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <button class="btn">
+          <a><i class="fab fa-hotjar fa-3x"></i>
+            <h4>ยอดนิยม</h4>
+          </a>
+        </button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <button class="btn">
+          <a><i class="fas fa-dice fa-3x"></i>
+            <h4>เกมทั้งหมด</h4>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+
+        <div class="view overlay">
+          <div class="card">
+            <div class="ribbon" style="z-index:1024">
+              <div class="label">New !</div>
+            </div>
+            <div class="card-body">
+              <img src="img/game/african.png" class="img-fluid " alt="smaple image" width="100%">
+              <div class="mask flex-center rgba-black-strong">
+                <div class="button_cont"><a class="example_a" href="add-website-here" target="_blank"
+                    rel="nofollow noopener">
+                    <i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a></a>
+                </div>
+              </div>
+
+            </div>
+            <p class="h4"> Safari Life</p>
           </div>
         </div>
-        
-        <div class="test-case-wrap slick-1-3">
-          <h2>1/3</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+
+          <div class="card-body">
+            <p class="h5">
+              Safari Life
+            </p>
+            <img src="img/game/african.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-            
-        <div class="test-case-wrap slick-2-2">
-          <h2>2/2</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Aladdin
+            </p>
+            <img src="img/game/aladdin.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        
-        <div class="test-case-wrap slick-2-3">
-          <h2>2/3</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Ancientartifact
+            </p>
+            <img src="img/game/ancientartifactgw.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        
-        <div class="test-case-wrap slick-2-4">
-          <h2>2/4</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Ancientegypt
+            </p>
+            <img src="img/game/ancientegypt.png" alt="" width="100%" />
           </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
         </div>
-        
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Archer
+            </p>
+            <img src="img/game/archer.png" alt="" width="100%" />
+          </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Azteca
+            </p>
+            <img src="img/game/azteca.png" alt="" width="100%" />
+          </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Baccarat
+            </p>
+            <img src="img/game/baccarat.png" alt="" width="100%" />
+          </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="h5">
+              Beanstalk
+            </p>
+            <img src="img/game/beanstalk.png" alt="" width="100%" />
+          </div>
+          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
         <div class="test-case-wrap slick-5-1">
           <h2>5/1</h2>
           <div class="slider">
@@ -153,194 +305,19 @@
             <div>Slide 6</div>
           </div>
         </div>
-        
-        <div class="test-case-wrap slick-9-1">
-          <h2>9/1</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
-            <div>Slide 7</div>
-            <div>Slide 8</div>
-            <div>Slide 9</div>
-            <div>Slide 10</div>
-          </div>
-        </div>
-        
-        <div class="test-case-wrap slick-9-2">
-          <h2>9/2</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
-            <div>Slide 7</div>
-            <div>Slide 8</div>
-            <div>Slide 9</div>
-            <div>Slide 10</div>
-          </div>
-        </div>
-        
-      </div>
-      <div role="tabpanel" class="tab-pane" id="special">
-
-        <div class="test-case-wrap centerMode-asNavFor">
-          <h2>CenterMode: True & AsNavFor</h2>
-          <div class="slider thumbs">
-            <div class="slide">Slide 1</div>
-            <div class="slide">Slide 2</div>
-            <div class="slide">Slide 3</div>
-            <div class="slide">Slide 4</div>
-            <div class="slide">Slide 5</div>
-            <div class="slide">Slide 6</div>
-            <div class="slide">Slide 7</div>
-            <div class="slide">Slide 8</div>
-            <div class="slide">Slide 9</div>
-          </div>
-
-          <div class="slider text">
-            <div class="slide">Slide 1</div>
-            <div class="slide">Slide 2</div>
-            <div class="slide">Slide 3</div>
-            <div class="slide">Slide 4</div>
-            <div class="slide">Slide 5</div>
-            <div class="slide">Slide 6</div>
-            <div class="slide">Slide 7</div>
-            <div class="slide">Slide 8</div>
-            <div class="slide">Slide 9</div>
-          </div>
-        </div>
       </div>
     </div>
-
   </div>
+</body>
 
-
-</div>
-<script>
-  //BASIC
-//////////////////
-
-//RESPONSIVE SLICK
-$('.responsive-slick .slider').slick({
-  dots: true,
-  responsive: [{
-    breakpoint: 500,
-    settings: {
-      dots: false,
-      arrows: false,
-      infinite: false,
-      slidesToShow: 2,
-      slidesToScroll: 2
-    }
-  }]
-});
-
-//VERTICAL MODE
-$('.vertical-mode .slider').slick({
-  dots: true,
-  slidesToShow: 3,
-  vertical: true,
-});
-
-//CENTER MODE
-$('.center-mode .slider').slick({
-  dots: true,
-  slidesToShow: 3,
-  centerMode: true,
-});
-
-//VARIBALE WIDTH MODE
-$('.variable-width-mode .slider').slick({
-  dots: true,
-  slidesToShow: 3,
-  variableWidth: true,
-});
-
-//LAZYLOAD ON DEMAND MODE
-$('.lazyload-mode .slider').slick({
-  dots: true,
-  slidesToShow: 3,
-  lazyLoad: 'onDemand',
-});
-
-//SLIDE/SCROLL
-//////////////////
-$('.slick-1-2 .slider').slick({
-  dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 2,
-});
-
-$('.slick-1-3 .slider').slick({
-  dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 3,
-});
-
-$('.slick-2-2 .slider').slick({
-  dots: true,
-  slidesToShow: 2,
-  slidesToScroll: 2,
-});
-
-$('.slick-2-3 .slider').slick({
-  dots: true,
-  slidesToShow: 2,
-  slidesToScroll: 3,
-});
-
-$('.slick-2-4 .slider').slick({
-  dots: true,
-  slidesToShow: 2,
-  slidesToScroll: 4,
-});
-
-$('.slick-5-1 .slider').slick({
-  dots: true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-});
-
-$('.slick-9-1 .slider').slick({
-  dots: true,
-  slidesToShow: 9,
-  slidesToScroll: 1,
-});
-
-$('.slick-9-2 .slider').slick({
-  dots: true,
-  slidesToShow: 9,
-  slidesToScroll: 2,
-});
-
-//SPECIAL
-//////////////////
-
-//CENTER MODE AND AS NAV FOR
-$(".centerMode-asNavFor .slider.thumbs").slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  asNavFor: '.centerMode-asNavFor .slider.text',
-  dots: false,
-  arrows: false,
-  centerMode: true,
-  focusOnSelect: true
-});
-$(".centerMode-asNavFor .slider.text").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  asNavFor: '.centerMode-asNavFor .slider.thumbs'
-});
-
-$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-  $(e.target).find('.slider').each(function() {
-    $(this).slick('setPosition');
-  })
-})
-</script>
+</html>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>

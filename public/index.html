@@ -2,322 +2,69 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Check</title>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet" />
+  <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href=".js/style.js">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
-  <title>Game</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-  @import url("https://fonts.googleapis.com/css?family=Mitr&display=swap");
-
-  .centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  body,
+  html {
+    height: 100%;
   }
 
-  body {
-    /* background-image: url(img/bg2.png); */
-    background-color: rgb(10, 10, 10);
-    color: #ffffff;
-    font-family: "Mitr", sans-serif !important;
+  .bg {
+    /* The image used */
+    background-image: url(img/bg6.png);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-
-  .card {
-    background: rgb(49, 49, 49) !important;
-    background: radial-gradient(circle,
-        rgb(32, 32, 32) 0%,
-        rgb(0, 0, 0) 80%) !important;
-    padding: 3% !important;
-    border-radius: 0.5rem !important;
-  }
-
-  h3 {
-    color: #ffffff !important;
-  }
-
-  .card-body {
-    border-radius: 15rem !important;
-  }
-
-
-  .btn {
-    border-radius: 1rem;
-    background-color: #94271f;
-    width: 100%;
-    height: 80%;
-  }
-
-  /* hover */
-  .example_a {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #ed3330;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
-  }
-
-  .example_a:hover {
-    background: #181818;
-    border-radius: 0.5rem !important;
-    border: 0.05rem solid #ed3330;
-    letter-spacing: 3px;
-    -webkit-box-shadow: 10px 10px 80px -10px rgba(255, 0, 0, 0.57);
-    -moz-box-shadow: 10px 10px 80px -10px rgba(255, 0, 0, 0.733);
-    box-shadow: 10px 80px -20px rgba(255, 0, 0, 0.705);
-    transition: all 0.4s ease 0s;
-  }
-
-  /* ribbon */
-  .ribbon {
-    position: absolute;
-    display: block;
-    top: -4px;
-    right: -4px;
-    width: 110px;
-    height: 110px;
-    overflow: hidden;
-  }
-
-  .ribbon .label {
-    position: relative;
-    display: block;
-    left: 6px;
-    top: 4px;
-    width: 160px;
-    padding: 11px 0;
-    font-family: Sans-Serif;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    background: rgb(5, 2, 2);
-    background: linear-gradient(90deg, rgb(47, 0, 0) 16%, rgba(217, 26, 26, 1) 100%);
-
-    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-    -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-
-    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
-    -moz-transform: rotate(45deg) translate3d(0, 0, 0);
-    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
-    transform: rotate(45deg) translate3d(0, 0, 0);
-  }
-
-  .ribbon .label:before,
-  .ribbon .label:after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    border-top: 4px solid #3C7568;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-
-  }
-
-  .ribbon .label:before {
-    left: 0;
-  }
-
-  .ribbon .label:after {
-    right: 0;
-  }
-
-  /* slide */
 </style>
 
-<body>
-  <div class="container mt-4">
-    <div class="row mb-3">
-      <div class="col-12">
-        <form class="form-inline md-form form-sm mt-0 justify-content-center">
-          <i class="fas fa-search" aria-hidden="true"></i>
-          <input class="form-control form-control-sm ml-3" style="width: 80%;" type="text" placeholder="Search"
-            aria-label="Search" />
-        </form>
-      </div>
-    </div>
-    <div class="row justify-content-center mt-3 mb-5">
-      <div class="col-12 col-md-4 col-lg-4">
-        <button class="btn">
-          <a><i class="fas fa-thumbs-up fa-3x"></i>
-            <h4>แนะนำ</h4>
-          </a>
-        </button>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <button class="btn">
-          <a><i class="fab fa-hotjar fa-3x"></i>
-            <h4>ยอดนิยม</h4>
-          </a>
-        </button>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <button class="btn">
-          <a><i class="fas fa-dice fa-3x"></i>
-            <h4>เกมทั้งหมด</h4>
-          </a>
-        </button>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
+<body class="bg">
 
-        <div class="view overlay">
-          <div class="card">
-            <div class="ribbon" style="z-index:1024">
-              <div class="label">New !</div>
-            </div>
-            <div class="card-body">
-              <img src="img/game/african.png" class="img-fluid " alt="smaple image" width="100%">
-              <div class="mask flex-center rgba-black-strong">
-                <div class="button_cont"><a class="example_a" href="add-website-here" target="_blank"
-                    rel="nofollow noopener">
-                    <i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a></a>
-                </div>
-              </div>
+  <!-- Start your project here-->
+  <div style="height: 100vh">
+    <div class="flex-center flex-column">
+      <!-- Card -->
+      <div class="card">
+        <!-- Card content -->
+        <div class="card-body text-center p-5">
+          <!-- Title -->
+          <i class="fas fa-times-circle red-text fa-4x mb-3"></i>
+          <h2 class="card-title"><a>ไม่พบข้อมูลในระบบ</a></h2>
 
-            </div>
-            <p class="h4"> Safari Life</p>
-          </div>
         </div>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
 
-          <div class="card-body">
-            <p class="h5">
-              Safari Life
-            </p>
-            <img src="img/game/african.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
       </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <p class="h5">
-              Aladdin
-            </p>
-            <img src="img/game/aladdin.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <p class="h5">
-              Ancientartifact
-            </p>
-            <img src="img/game/ancientartifactgw.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <p class="h5">
-              Ancientegypt
-            </p>
-            <img src="img/game/ancientegypt.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <p class="h5">
-              Archer
-            </p>
-            <img src="img/game/archer.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <p class="h5">
-              Azteca
-            </p>
-            <img src="img/game/azteca.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <p class="h5">
-              Baccarat
-            </p>
-            <img src="img/game/baccarat.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 col-lg-3 mt-2">
-        <div class="card">
-          <div class="card-body">
-            <p class="h5">
-              Beanstalk
-            </p>
-            <img src="img/game/beanstalk.png" alt="" width="100%" />
-          </div>
-          <a href="" class="myButton" style="margin: 1%"><i class="fas fa-gamepad fa-lg mr-2"></i>เล่นเลย</a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="test-case-wrap slick-5-1">
-          <h2>5/1</h2>
-          <div class="slider">
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-            <div>Slide 4</div>
-            <div>Slide 5</div>
-            <div>Slide 6</div>
-          </div>
-        </div>
-      </div>
+      <!-- Card -->
     </div>
   </div>
+  <!-- Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
