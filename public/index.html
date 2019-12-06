@@ -1,66 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="util.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
+    <!--===============================================================================================-->
+    <!-- Bootstrap core CSS -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
     />
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
-    <title>918Kiss Auto</title>
   </head>
   <style>
-    .centered {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    @font-face {
+      font-family: myFirstFont;
+      src: url("../font/SukhumvitSet.ttc");
+    }
+
+    body {
+      font-family: myFirstFont !important;
+    }
+
+    .login-box input[type="text"],
+    input[type="password"] {
+      border-bottom: none !important;
     }
   </style>
+
   <body>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-10 col-md-5 col-lg-4 centered">
-          <a href="login.html"
-            ><img src="img/logo.png" alt="..." class="logo"
-          /></a>
-        </div>
-      </div>
+    <div>
+      <img class="logo" src="logosexy.png" />
     </div>
-    <!-- footer -->
-    <div class="container footer">
-      <div class="row text-center justify-content-center">
-        <div class="col-md-2 col-3">
-          <img src="img/918kiss.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/joker.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/live22.png" alt="" width="100%" />
-        </div>
-        <div class="col-md-2 col-3">
-          <img src="img/slotxo.png" alt="" width="100%" />
-        </div>
-        <div class="col-12 credit_footer mt-3" style="color: #707070">
-          Copyright © Slot-auto.com All Right Reserved
+    <div class="container">
+      <div class="login-box" style="max-width:700px">
+        <form>
+          <div class="box">
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Valid email is: a@b.c"
+            >
+              <input class="input100" type="text" name="username" />
+              <span class="focus-input100" data-placeholder="username"></span>
+            </div>
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter password"
+            >
+              <span class="btn-show-pass">
+                <i class="zmdi zmdi-eye"></i>
+              </span>
+              <input class="input100" type="password" name="password" />
+              <span class="focus-input100" data-placeholder="Password"></span>
+            </div>
+          </div>
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button class="login100-form-btn">
+                Login
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row mt-5 mb-5 text-center justify-content-center ">
+          <div class="col-12">
+            <p style="color: rgba(255, 255, 255, 0.781)">
+              sexybaccarat168 Allright Reserved
+            </p>
+          </div>
         </div>
       </div>
     </div>

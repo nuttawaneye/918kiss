@@ -1,15 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(image.jpg);
+  background: url(bg.png);
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
 }
 .login-box {
-  width: 98%;
-  height: 350px;
-  background: rgba(0, 0, 0, 0.589);
+  width: 85%;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   top: 50%;
   left: 50%;
@@ -19,11 +19,13 @@ body {
   padding: 70px 30px;
 }
 .avatar {
-  width: 70%;
+  height: 100px;
   border-radius: 50%;
   position: absolute;
-  top: -50px;
-  left: calc(43% - 50px);
+  top: calc(2% - 74.16px);
+  left: calc(40% - 40px);
+  max-width: 170px;
+  display: block;
 }
 h1 {
   margin: 0;
@@ -38,7 +40,7 @@ h1 {
 }
 .login-box input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .login-box input[type="text"],
 input[type="password"] {
